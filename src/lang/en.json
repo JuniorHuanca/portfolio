@@ -1,0 +1,19 @@
+{
+  "navbar": {
+    "links": {
+      "home": "Home",
+      "aboutMe": "About Me",
+      "softSkills": "Soft Skills",
+      "techSkills": "Tech Skills",
+      "projects": "Projects",
+      "contactMe": "Contact Me"
+    },
+    "languages": {
+      "en": "English",
+      "es": "Spanish"
+    }
+  },
+  "home": {
+    "welcome": "Welcome"
+  }
+}

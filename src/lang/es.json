@@ -1,0 +1,19 @@
+{
+  "navbar": {
+    "links": {
+      "home": "Inicio",
+      "aboutMe": "Conóceme",
+      "softSkills": "Habilidades blandas",
+      "techSkills": "Habilidades técnicas",
+      "projects": "Proyectos",
+      "contactMe": "Contáctame"
+    },
+    "languages": {
+      "en": "Ingles",
+      "es": "Español"
+    }
+  },
+  "home": {
+    "welcome": "Bienvenido"
+  }
+}
