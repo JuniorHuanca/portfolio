@@ -13,9 +13,16 @@ function LenguageSelector({ languages }: Props) {
     });
   };
   return (
-    <select onChange={handleChangeLang} className="bg-transparent">
-      <option value="es" className="bg-red-500">{languages.es}</option>
-      <option value="en" className="bg-red-500">{languages.en}</option>
+    <select
+      onChange={handleChangeLang}
+      className="md:pr-8 sm:text-sm sm:leading-5 block md:appearance-none bg-transparent border-none pl-3 pr-3 py-2 rounded-md text-base font-medium"
+    >
+      <option value="es" className="bg-purple-700">
+        {languages.es}
+      </option>
+      <option value="en" className="bg-purple-700">
+        {languages.en}
+      </option>
     </select>
   );
 }

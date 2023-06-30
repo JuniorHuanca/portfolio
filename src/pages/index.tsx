@@ -1,7 +1,6 @@
 import Home from "@/components/Home/Home";
-import LenguageSelector from "@/components/LenguageSelector";
 import Navbar from "@/components/Navbar/Navbar";
-import { INavbar } from "@/shared/types";
+import { INavbar, SelectedPage } from "@/shared/types";
 import { useEffect, useState } from "react";
 
 type Props = {
@@ -10,6 +9,9 @@ type Props = {
 };
 export default function App({ home, navbar }: Props) {
   const [isTopOfPage, setIsTopOfPage] = useState<boolean>(true);
+  const [selectedPage, setSelectedPage] = useState<SelectedPage>(
+    SelectedPage.Home
+  );
   useEffect(() => {
     const handleScroll = () => {
       if (window.scrollY === 0) {
@@ -23,7 +25,12 @@ export default function App({ home, navbar }: Props) {
   }, []);
   return (
     <div className="dark:bg-deep-blue dark:text-white">
-      <Navbar isTopOfPage={isTopOfPage} navbar={navbar} />
+      <Navbar
+        isTopOfPage={isTopOfPage}
+        selectedPage={selectedPage}
+        setSelectedPage={setSelectedPage}
+        navbar={navbar}
+      />
       <Home />
       <h1>{home.welcome}</h1>
     </div>

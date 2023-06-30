@@ -1,3 +1,12 @@
+export enum SelectedPage {
+  Home = "home",
+  AboutMe = "aboutme",
+  SoftSkills = "softskills",
+  TechSkills = "techskills",
+  Projects = "projects",
+  ContactMe = "contactme",
+}
+
 export interface INavbar {
   links: ILinks;
   languages: ILanguages;
