@@ -52,9 +52,9 @@ const Home = ({ setSelectedPage, home }: Props) => {
               <h1 className="text-3xl">{home.career}</h1>
             </div>
           </div>
-          <p className="my-8">{home.introduction}</p>
+          <p className="my-8 text-xl">{home.introduction}</p>
           <AnchorLink
-            className="rounded-md bg-indigo-900/50 px-10 py-2 hover:bg-indigo-900/70 hover:text-white"
+            className="text-xl rounded-md bg-indigo-900/50 px-10 py-2 hover:bg-indigo-900/70 hover:text-white"
             onClick={() => setSelectedPage(SelectedPage.ContactMe)}
             href={`#${SelectedPage.ContactMe}`}
           >
@@ -62,7 +62,7 @@ const Home = ({ setSelectedPage, home }: Props) => {
           </AnchorLink>
         </motion.div>
         <motion.div
-          className="relative flex-[2_2_0%] flex border border-gray-500 rounded-tl-[150px] rounded-tr-[150px] dark:border-white max-w-[500px]"
+          className="mt-10 md:mt-0 relative flex-[2_2_0%] flex border border-gray-500 rounded-tl-[150px] rounded-tr-[150px] dark:border-white max-w-[500px]"
           {...motionDivProps}
         >
           <Image
@@ -87,11 +87,11 @@ const Home = ({ setSelectedPage, home }: Props) => {
               <span className="absolute bottom-0 right-0 w-4 h-full bg-gradient-to-l from-white to-transparent opacity-5"></span>
               <span className="absolute inset-0 w-full h-full border border-white rounded-md opacity-10"></span>
               <span className="absolute w-0 h-0 transition-all duration-300 ease-out bg-white rounded-full group-hover:w-56 group-hover:h-56 opacity-5"></span>
-              <span className="relative">{home.donwload}</span>
+              <span className="relative text-xl">{home.donwload}</span>
             </button>
           </a>
           <motion.div
-            className="rounded-full absolute top-0 right-3"
+            className="rounded-full absolute md:top-0 md:right-3"
             {...socialNetworksProps}
           >
             <Link
@@ -100,11 +100,11 @@ const Home = ({ setSelectedPage, home }: Props) => {
               target="_blank"
               rel="noreferrer"
             >
-              <BsGithub className="text-8xl" />
+              <BsGithub className="text-5xl md:text-8xl" />
             </Link>
           </motion.div>
           <motion.div
-            className="rounded-full absolute top-28 -right-12"
+            className="rounded-full absolute md:top-28 md:-right-12"
             {...socialNetworksProps}
           >
             <Link
@@ -113,7 +113,7 @@ const Home = ({ setSelectedPage, home }: Props) => {
               target="_blank"
               rel="noreferrer"
             >
-              <BsLinkedin className="text-8xl" />
+              <BsLinkedin className="text-5xl md:text-8xl" />
             </Link>
           </motion.div>
           {/* <motion.div

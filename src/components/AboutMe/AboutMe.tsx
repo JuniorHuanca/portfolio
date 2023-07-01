@@ -2,6 +2,7 @@ import { SelectedPage } from "@/shared/types";
 import { motion } from "framer-motion";
 import Image from "next/image";
 import Software from "@/assets/software.jpg";
+import Subtitle from "../Subtitle";
 type Props = {
   setSelectedPage: (value: SelectedPage) => void;
 };
@@ -33,10 +34,7 @@ const AboutMe = ({ setSelectedPage }: Props) => {
                     visible: { opacity: 1, x: 0 },
                   }}
                 >
-                  {/* <HText> */}
-                    <span className="text-primary-500">CONO</span>
-                    CEME
-                  {/* </HText> */}
+                  <Subtitle>Habilidades blandas</Subtitle>
                 </motion.div>
               </div>
             </div>
