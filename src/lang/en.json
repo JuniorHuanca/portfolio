@@ -11,9 +11,17 @@
     "languages": {
       "en": "English",
       "es": "Spanish"
+    },
+    "mode": {
+      "system": "System 💻",
+      "light": "Light ☀️",
+      "dark": "Dark 🌙"
     }
   },
   "home": {
-    "welcome": "Welcome"
+    "career": "Full-Stack Web Developer",
+    "introduction": "I am a full-stack web developer with experience in developing applications using React and Next.js. My focus revolves around building scalable and modern web solutions, leveraging my skills in both frontend and backend development.",
+    "contactMe": "Contact Me",
+    "donwload": "Download CV"
   }
 }

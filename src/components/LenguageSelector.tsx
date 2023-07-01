@@ -2,10 +2,11 @@ import { useRouter } from "next/router";
 import { ChangeEvent } from "react";
 
 type Props = {
-  languages: { es: string; en: string };
+  languages: { [key: string]: string };
+  locale: string;
 };
 
-function LenguageSelector({ languages }: Props) {
+function LenguageSelector({ languages, locale }: Props) {
   const router = useRouter();
   const handleChangeLang = (e: ChangeEvent<HTMLSelectElement>) => {
     router.push(router.pathname, router.pathname, {
@@ -14,15 +15,15 @@ function LenguageSelector({ languages }: Props) {
   };
   return (
     <select
+      value={locale}
       onChange={handleChangeLang}
-      className="md:pr-8 sm:text-sm sm:leading-5 block md:appearance-none bg-transparent border-none pl-3 pr-3 py-2 rounded-md text-base font-medium"
+      className="sm:leading-5 block md:appearance-none bg-transparent border-none pl-3 pr-6 py-2 rounded-md text-lg font-bold"
     >
-      <option value="es" className="bg-purple-700">
-        {languages.es}
-      </option>
-      <option value="en" className="bg-purple-700">
-        {languages.en}
-      </option>
+      {Object.keys(languages).map((key, index) => (
+        <option key={index} value={key} className="bg-purple-500">
+          {languages[key]}
+        </option>
+      ))}
     </select>
   );
 }
