@@ -42,3 +42,13 @@ export interface IHome {
   contactMe: string;
   donwload: string;
 }
+
+export interface IAboutme {
+  title:       string;
+  description: string;
+}
+
+export interface ISoftskills {
+  title:       string;
+  description: string;
+}

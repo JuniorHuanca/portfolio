@@ -1,18 +1,29 @@
 import AboutMe from "@/components/AboutMe/AboutMe";
 import Home from "@/components/Home/Home";
 import Navbar from "@/components/Navbar/Navbar";
-import { INavbar, SelectedPage } from "@/shared/types";
+import {
+  IAboutme,
+  IHome,
+  INavbar,
+  ISoftskills,
+  SelectedPage,
+} from "@/shared/types";
 import { useEffect, useState } from "react";
 import { motion, useScroll, useSpring } from "framer-motion";
 import Head from "next/head";
 import LineGradient from "@/components/LineGradient/LineGradient";
 import SoftSkills from "@/components/SoftSkills/SoftSkills";
 import Footer from "@/components/Footer/Footer";
+import TechSkills from "@/components/TechSkills/TechSkills";
+import Projects from "@/components/Projects/Projects";
+import ContactMe from "@/components/ContactMe/ContactMe";
 type Props = {
-  home: any;
+  home: IHome;
   navbar: INavbar;
+  aboutme: IAboutme;
+  softskills: ISoftskills;
 };
-export default function App({ home, navbar }: Props) {
+export default function App({ home, navbar, aboutme, softskills }: Props) {
   const [isTopOfPage, setIsTopOfPage] = useState<boolean>(true);
   const [selectedPage, setSelectedPage] = useState<SelectedPage>(
     SelectedPage.Home
@@ -53,14 +64,20 @@ export default function App({ home, navbar }: Props) {
           navbar={navbar}
         />
         <motion.div
-          className="fixed bg-blue-950 dark:bg-purple-800 left-0 top-16 right-0 h-1 origin-left"
+          className="fixed bg-blue-950 dark:bg-purple-800 left-0 top-16 right-0 h-1 origin-left z-10"
           style={{ scaleX }}
         />
         <Home setSelectedPage={setSelectedPage} home={home} />
         <LineGradient />
-        <AboutMe setSelectedPage={setSelectedPage} />
+        <AboutMe setSelectedPage={setSelectedPage} aboutme={aboutme} />
         <LineGradient />
-        <SoftSkills setSelectedPage={setSelectedPage} />
+        <SoftSkills setSelectedPage={setSelectedPage} softskills={softskills} />
+        <LineGradient />
+        <TechSkills setSelectedPage={setSelectedPage} />
+        <LineGradient />
+        <Projects setSelectedPage={setSelectedPage} />
+        <LineGradient />
+        <ContactMe setSelectedPage={setSelectedPage} />
         <Footer />
       </div>
     </>
@@ -71,8 +88,10 @@ export async function getStaticProps({ locale }: { locale: string }) {
   const response = await import(`@/lang/${locale}.json`);
   return {
     props: {
-      home: response.default.home,
       navbar: { ...response.default.navbar, locale },
+      home: response.default.home,
+      aboutme: response.default.aboutme,
+      softskills: response.default.softskills,
     },
   };
 }

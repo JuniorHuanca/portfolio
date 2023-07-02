@@ -11,7 +11,7 @@ const Subtitle = ({ children }: Props) => {
     .toUpperCase();
 
   return (
-    <h2 className="basis-3/5 font-playfair text-3xl font-bold xl:text-5xl">
+    <h2 className="basis-3/5 text-4xl font-bold xl:text-5xl">
       <span className="text-blue-500">{first}</span>
       {second}
     </h2>

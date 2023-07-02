@@ -7,6 +7,7 @@ import Person from "@/assets/me.png";
 import Link from "next/link";
 import AnchorLink from "react-anchor-link-smooth-scroll";
 import { BsGithub, BsLinkedin } from "react-icons/bs";
+import { motionDivProps } from "@/shared/config";
 
 type Props = {
   setSelectedPage: (value: SelectedPage) => void;
@@ -14,16 +15,6 @@ type Props = {
 };
 
 const Home = ({ setSelectedPage, home }: Props) => {
-  const motionDivProps = {
-    initial: "hidden",
-    whileInView: "visible",
-    viewport: { once: true, amount: 0.5 },
-    transition: { duration: 0.5 },
-    variants: {
-      hidden: { opacity: 0, x: -50 },
-      visible: { opacity: 1, x: 0 },
-    },
-  };
   const socialNetworksProps = {
     initial: { scale: 0 },
     animate: { rotate: 360, scale: 1 },
@@ -39,17 +30,17 @@ const Home = ({ setSelectedPage, home }: Props) => {
     <section id="home" className="flex items-center md:min-h-screen">
       {/* IMAGE AND MAIN HEADER */}
       <motion.div
-        className="mx-auto w-5/6 items-center justify-center md:flex md:h-5/6"
+        className="mx-auto w-5/6 items-center justify-center flex-col sm:flex md:flex-row md:h-5/6"
         onViewportEnter={() => setSelectedPage(SelectedPage.Home)}
       >
-        <motion.div className="flex-[3_3_0%]" {...motionDivProps}>
+        <motion.div className="flex-1 md:flex-[3_3_0%]" {...motionDivProps}>
           <div className="relative">
             <div className="before:absolute before:-top-20 before:-left-20 before:z-[-1] md:before:content-evolvetext">
               <span className="invisible w-6 text-sm md:visible md:w-[850px] absolute md:-left-20 md:-top-12 sm:text-8xl font-bold text-black opacity-10 dark:text-white">
                 JUNIOR HUANCA
               </span>
-              <h2 className="text-6xl lg:text-7xl font-bold">JUNIOR HUANCA</h2>
-              <h1 className="text-3xl">{home.career}</h1>
+              <h2 className="text-3xl xs:text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold">JUNIOR HUANCA</h2>
+              <h1 className="text-2xl xs:text-3xl">{home.career}</h1>
             </div>
           </div>
           <p className="my-8 text-xl">{home.introduction}</p>
@@ -62,13 +53,13 @@ const Home = ({ setSelectedPage, home }: Props) => {
           </AnchorLink>
         </motion.div>
         <motion.div
-          className="mt-10 md:mt-0 relative flex-[2_2_0%] flex border border-gray-500 rounded-tl-[150px] rounded-tr-[150px] dark:border-white max-w-[500px]"
+          className="my-10 md:m-0 relative flex-1 md:flex-[2_2_0%] flex border border-gray-500 rounded-tl-[150px] rounded-tr-[150px] dark:border-white max-w-[500px]"
           {...motionDivProps}
         >
           <Image
-            // className="sm:w-[100%] sm:h-[100%]"
             alt="home-pageGraphic"
             src={Person}
+            priority
           />
           <a
             href="/Junior Huanca CV.pdf"
@@ -91,50 +82,7 @@ const Home = ({ setSelectedPage, home }: Props) => {
             </button>
           </a>
           <motion.div
-            className="rounded-full absolute md:top-0 md:right-3"
-            {...socialNetworksProps}
-          >
-            <Link
-              className="hover:opacity-50 transition duration-500"
-              href="https://www.linkedin.com/in/junior-huanca-697582254/"
-              target="_blank"
-              rel="noreferrer"
-            >
-              <BsGithub className="text-5xl md:text-8xl" />
-            </Link>
-          </motion.div>
-          <motion.div
-            className="rounded-full absolute md:top-28 md:-right-12"
-            {...socialNetworksProps}
-          >
-            <Link
-              className="hover:opacity-50 transition duration-500"
-              href="https://www.linkedin.com/in/junior-huanca-697582254/"
-              target="_blank"
-              rel="noreferrer"
-            >
-              <BsLinkedin className="text-5xl md:text-8xl" />
-            </Link>
-          </motion.div>
-          {/* <motion.div
-            className="rounded-full absolute -top-[0%] left-[10%] sm:-top-[5%] sm:left-[10%]"
-            {...socialNetworksProps}
-          >
-            <Link
-              className="hover:opacity-50 transition duration-500"
-              href="https://www.linkedin.com/in/junior-huanca-697582254/"
-              target="_blank"
-              rel="noreferrer"
-            >
-              <Image
-                className="rounded-full md:w-24 lg:w-28 xl:w-32 bg-white"
-                alt="Linkedin"
-                src={Linkedin}
-              />
-            </Link>
-          </motion.div>
-          <motion.div
-            className="rounded-full absolute top-[20%] -left-[8%] sm:top-[20%] sm:-left-[10%]"
+            className="absolute top-[0%] right-[15%] sm:right-[5%] md:-top-[5%] md:right-[5%]"
             {...socialNetworksProps}
           >
             <Link
@@ -143,13 +91,22 @@ const Home = ({ setSelectedPage, home }: Props) => {
               target="_blank"
               rel="noreferrer"
             >
-              <Image
-                className="rounded-full md:w-24 lg:w-28 xl:w-32 bg-white"
-                alt="Github"
-                src={Github}
-              />
+              <BsGithub className="text-5xl sm:text-7xl md:text-8xl" />
             </Link>
-          </motion.div> */}
+          </motion.div>
+          <motion.div
+            className="absolute top-[20%] right-0 sm:-right-[5%] md:top-[25%] md:-right-[10%]"
+            {...socialNetworksProps}
+          >
+            <Link
+              className="hover:opacity-50 transition duration-500"
+              href="https://www.linkedin.com/in/junior-huanca-697582254/"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <BsLinkedin className="text-5xl sm:text-7xl md:text-8xl" />
+            </Link>
+          </motion.div>
         </motion.div>
       </motion.div>
     </section>

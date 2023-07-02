@@ -23,5 +23,45 @@
     "introduction": "Soy un desarrollador web full-stack con experiencia en el desarrollo de aplicaciones utilizando React y Next.js. Mi enfoque se centra en construir soluciones web escalables y modernas, aprovechando mis habilidades tanto en el desarrollo frontend como en el backend.",
     "contactMe": "Contáctame",
     "donwload": "Descargar CV"
+  },
+  "aboutme": {
+    "title": "CONOCEME",
+    "description": "¡Hola! Soy Junior Huanca, un desarrollador web apasionado por crear experiencias digitales sorprendentes. Con experiencia en tecnologías como Next.js, JavaScript, TypeScript, React, Node.js y Express, puedo construir aplicaciones web robustas y escalables.\nTengo habilidades en el uso de bases de datos como MongoDB y PostgreSQL, lo que me permite gestionar eficientemente los datos y garantizar la integridad de la información.\nAdemás, tengo experiencia en el uso de Git y Bash para el control de versiones y automatización de tareas, lo que me ayuda a trabajar de manera más eficiente y garantizar una entrega de proyectos sin problemas.\nEstoy emocionado por enfrentar nuevos desafíos y aprender constantemente en este campo en evolución. Si buscas un desarrollador web apasionado y comprometido, ¡no dudes en contactarme! Estaré encantado de colaborar contigo en tu próximo proyecto."
+  },
+  "softskills": {
+    "title": "HABILIDADES BLANDAS",
+    "description": "Como desarrollador web full stack, considero que mis habilidades blandas más importantes son:",
+    "data": [
+      {
+        "image": "@/assets/Comunicacion.png",
+        "title": "Comunicación",
+        "text": "Me esfuerzo por comunicarme de manera clara y efectiva con clientes, colegas y superiores para garantizar una comprensión mutua y una colaboración efectiva."
+      },
+      {
+        "image": "@/assets/Colaboracion.png",
+        "title": "Colaboración",
+        "text": "Me gusta trabajar en equipo y colaborar con otros desarrolladores, diseñadores y profesionales de TI para lograr objetivos comunes."
+      },
+      {
+        "image": "@/assets/Adaptabilidad.png",
+        "title": "Adaptabilidad",
+        "text": "Me mantengo actualizado con las últimas tecnologías y tendencias en el desarrollo web y estoy dispuesto a aprender nuevas habilidades y tecnologías para satisfacer los requisitos cambiantes de los clientes."
+      },
+      {
+        "image": "@/assets/ResolucionProblemas.png",
+        "title": "Resolución de problemas",
+        "text": "Me considero un pensador analítico y estoy dispuesto a encontrar soluciones a los desafíos técnicos que surgen en el desarrollo web."
+      },
+      {
+        "image": "@/assets/Liderazgo.png",
+        "title": "Liderazgo",
+        "text": "Me esfuerzo por ser un líder motivador cuando lidero proyectos o equipos, y trato de fomentar un ambiente colaborativo y productivo."
+      },
+      {
+        "image": "@/assets/Organizacion.png",
+        "title": "Organización",
+        "text": "Me gusta mantener una visión general de mis proyectos y tareas y me esfuerzo por gestionar mi tiempo de manera efectiva para alcanzar mis objetivos y entregar proyectos a tiempo."
+      }
+    ]
   }
 }
