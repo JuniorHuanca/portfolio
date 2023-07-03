@@ -33,34 +33,34 @@
     "description": "As a full stack web developer, I consider my most important soft skills to be:",
     "data": [
       {
-        "image": "@/assets/Comunicacion.png",
-        "title": "Comunicación",
-        "text": "Me esfuerzo por comunicarme de manera clara y efectiva con clientes, colegas y superiores para garantizar una comprensión mutua y una colaboración efectiva."
+        "image": "Comunicacion",
+        "title": "Communication",
+        "text": "I strive to communicate in a clear and effective manner with clients, colleagues, and superiors to ensure mutual understanding and effective collaboration."
       },
       {
-        "image": "@/assets/Colaboracion.png",
-        "title": "Colaboración",
-        "text": "Me gusta trabajar en equipo y colaborar con otros desarrolladores, diseñadores y profesionales de TI para lograr objetivos comunes."
+        "image": "Colaboracion",
+        "title": "Collaboration",
+        "text": "I enjoy working as part of a team and collaborating with other developers, designers, and IT professionals to achieve common goals."
       },
       {
-        "image": "@/assets/Adaptabilidad.png",
-        "title": "Adaptabilidad",
-        "text": "Me mantengo actualizado con las últimas tecnologías y tendencias en el desarrollo web y estoy dispuesto a aprender nuevas habilidades y tecnologías para satisfacer los requisitos cambiantes de los clientes."
+        "image": "Adaptabilidad",
+        "title": "Adaptability",
+        "text": "I stay up-to-date with the latest technologies and trends in web development and I am willing to learn new skills and technologies to meet the changing requirements of clients."
       },
       {
-        "image": "@/assets/ResolucionProblemas.png",
-        "title": "Resolución de problemas",
-        "text": "Me considero un pensador analítico y estoy dispuesto a encontrar soluciones a los desafíos técnicos que surgen en el desarrollo web."
+        "image": "ResolucionProblemas",
+        "title": "Problem Solving",
+        "text": "I consider myself an analytical thinker and I am willing to find solutions to technical challenges that arise in web development."
       },
       {
-        "image": "@/assets/Liderazgo.png",
-        "title": "Liderazgo",
-        "text": "Me esfuerzo por ser un líder motivador cuando lidero proyectos o equipos, y trato de fomentar un ambiente colaborativo y productivo."
+        "image": "Liderazgo",
+        "title": "Leadership",
+        "text": "I strive to be a motivating leader when leading projects or teams, and I aim to foster a collaborative and productive environment."
       },
       {
-        "image": "@/assets/Organizacion.png",
-        "title": "Organización",
-        "text": "Me gusta mantener una visión general de mis proyectos y tareas y me esfuerzo por gestionar mi tiempo de manera efectiva para alcanzar mis objetivos y entregar proyectos a tiempo."
+        "image": "Organizacion",
+        "title": "Organization",
+        "text": "I enjoy maintaining an overview of my projects and tasks, and I strive to manage my time effectively to achieve my goals and deliver projects on time."
       }
     ]
   }

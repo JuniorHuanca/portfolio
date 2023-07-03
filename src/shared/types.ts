@@ -7,6 +7,24 @@ export enum SelectedPage {
   ContactMe = "contactme",
 }
 
+export interface IHome {
+  career: string;
+  introduction: string;
+  contactMe: string;
+  donwload: string;
+}
+
+export interface IAboutme {
+  title: string;
+  description: string;
+}
+
+export interface ISoftskills {
+  title: string;
+  description: string;
+  data: ISoftskill[];
+}
+
 export interface INavbar {
   links: ILinks;
   languages: ILanguages;
@@ -36,19 +54,8 @@ export interface ILinks {
   contactMe: string;
 }
 
-export interface IHome {
-  career: string;
-  introduction: string;
-  contactMe: string;
-  donwload: string;
-}
-
-export interface IAboutme {
-  title:       string;
-  description: string;
-}
-
-export interface ISoftskills {
-  title:       string;
-  description: string;
+export interface ISoftskill {
+  image: string;
+  title: string;
+  text: string;
 }

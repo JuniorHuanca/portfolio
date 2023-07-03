@@ -42,7 +42,7 @@ function SoftSkills({ setSelectedPage, softskills }: Props) {
             variants={container}
             viewport={{ once: true, amount: 0.2 }}
           >
-            {dsd.map((skill, index) => (
+            {softskills.data.map((skill, index) => (
               <SoftSkill
                 image={skill.image}
                 title={skill.title}
