@@ -19,9 +19,6 @@ import Footer from "@/components/Footer/Footer";
 import TechSkills from "@/components/TechSkills/TechSkills";
 import Projects from "@/components/Projects/Projects";
 import ContactMe from "@/components/ContactMe/ContactMe";
-import 'swiper/css';
-import 'swiper/css/pagination';
-import 'swiper/css/effect-cube';
 type Props = {
   home: IHome;
   navbar: INavbar;

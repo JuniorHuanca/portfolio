@@ -74,7 +74,6 @@ const Project = ({ project, setPhotos, setIndex }: Props) => {
           pagination={{
             clickable: true,
           }}
-          navigation={true}
           creativeEffect={{
             prev: {
               shadow: true,
@@ -88,13 +87,7 @@ const Project = ({ project, setPhotos, setIndex }: Props) => {
               rotate: [0, -100, 0],
             },
           }}
-          modules={[
-            Autoplay,
-            Pagination,
-            Navigation,
-            EffectCube,
-            EffectCreative,
-          ]}
+          modules={[Autoplay, Pagination, EffectCube, EffectCreative]}
           autoplay={{
             delay: 2500,
             disableOnInteraction: false,
@@ -105,6 +98,7 @@ const Project = ({ project, setPhotos, setIndex }: Props) => {
           {project.images.map((e, index) => (
             <SwiperSlide key={index} className="rounded-xl overflow-hidden">
               <Image
+                className="h-[180px] xs:h-auto"
                 src={e}
                 alt={project.title}
                 priority
