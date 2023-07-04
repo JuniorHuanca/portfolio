@@ -63,5 +63,13 @@
         "text": "I enjoy maintaining an overview of my projects and tasks, and I strive to manage my time effectively to achieve my goals and deliver projects on time."
       }
     ]
+  },
+  "techskills": {
+    "title": "TECHNICAL SKILLS",
+    "description": "As an experienced web developer, I have a strong knowledge of technologies such as JavaScript, React, Redux, Node.js, Express, Sequelize, HTML, CSS, Next.js, TypeScript, Tailwind, and more. Below, you will find images representing my skills and expertise in these areas."
+  },
+  "projects": {
+    "title": "PROJECTS",
+    "description": "Welcome to my Projects section, where you can see my achievements and capabilities as a web developer. Each project includes a detailed description of the tasks I performed, as well as a link for you to view the final result. If you are interested in working with me on your next project, feel free to contact me."
   }
 }

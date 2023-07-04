@@ -1,3 +1,5 @@
+import { StaticImageData } from "next/image";
+
 export enum SelectedPage {
   Home = "home",
   AboutMe = "aboutme",
@@ -23,6 +25,16 @@ export interface ISoftskills {
   title: string;
   description: string;
   data: ISoftskill[];
+}
+
+export interface ITechskills {
+  title: string;
+  description: string;
+}
+
+export interface IProjects {
+  title: string;
+  description: string;
 }
 
 export interface INavbar {
@@ -58,4 +70,12 @@ export interface ISoftskill {
   image: string;
   title: string;
   text: string;
+}
+
+export interface IProject {
+  images: StaticImageData[];
+  title: string;
+  description: string;
+  link: string;
+  repository: string;
 }

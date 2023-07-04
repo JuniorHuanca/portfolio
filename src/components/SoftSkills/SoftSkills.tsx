@@ -35,7 +35,7 @@ function SoftSkills({ setSelectedPage, softskills }: Props) {
           }}
         >
           <Subtitle>{softskills.title}</Subtitle>
-          <p>{softskills.description}</p>
+          <p className="text-xl">{softskills.description}</p>
           <motion.div
             className="flex justify-center w-full gap-8 flex-wrap mt-6"
             {...motionDivProps}

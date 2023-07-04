@@ -5,7 +5,9 @@ import {
   IAboutme,
   IHome,
   INavbar,
+  IProjects,
   ISoftskills,
+  ITechskills,
   SelectedPage,
 } from "@/shared/types";
 import { useEffect, useState } from "react";
@@ -17,13 +19,25 @@ import Footer from "@/components/Footer/Footer";
 import TechSkills from "@/components/TechSkills/TechSkills";
 import Projects from "@/components/Projects/Projects";
 import ContactMe from "@/components/ContactMe/ContactMe";
+import 'swiper/css';
+import 'swiper/css/pagination';
+import 'swiper/css/effect-cube';
 type Props = {
   home: IHome;
   navbar: INavbar;
   aboutme: IAboutme;
   softskills: ISoftskills;
+  techskills: ITechskills;
+  projects: IProjects;
 };
-export default function App({ home, navbar, aboutme, softskills }: Props) {
+export default function App({
+  home,
+  navbar,
+  aboutme,
+  softskills,
+  techskills,
+  projects,
+}: Props) {
   const [isTopOfPage, setIsTopOfPage] = useState<boolean>(true);
   const [selectedPage, setSelectedPage] = useState<SelectedPage>(
     SelectedPage.Home
@@ -73,9 +87,9 @@ export default function App({ home, navbar, aboutme, softskills }: Props) {
         <LineGradient />
         <SoftSkills setSelectedPage={setSelectedPage} softskills={softskills} />
         <LineGradient />
-        <TechSkills setSelectedPage={setSelectedPage} />
+        <TechSkills setSelectedPage={setSelectedPage} techskills={techskills} />
         <LineGradient />
-        <Projects setSelectedPage={setSelectedPage} />
+        <Projects setSelectedPage={setSelectedPage} projects={projects} />
         <LineGradient />
         <ContactMe setSelectedPage={setSelectedPage} />
         <Footer />
@@ -92,6 +106,8 @@ export async function getStaticProps({ locale }: { locale: string }) {
       home: response.default.home,
       aboutme: response.default.aboutme,
       softskills: response.default.softskills,
+      techskills: response.default.techskills,
+      projects: response.default.projects,
     },
   };
 }

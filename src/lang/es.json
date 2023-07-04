@@ -63,5 +63,13 @@
         "text": "Me gusta mantener una visión general de mis proyectos y tareas y me esfuerzo por gestionar mi tiempo de manera efectiva para alcanzar mis objetivos y entregar proyectos a tiempo."
       }
     ]
+  },
+  "techskills": {
+    "title": "HABILIDADES TÉCNICAS",
+    "description": "Como desarrollador web con experiencia, tengo un fuerte conocimiento en tecnologías como JavaScript, React, Redux, Node JS, Express, Sequelize, HTML, CSS, NextJS, TypeScript y Tailwind y más. A continuación, encontrarás imágenes que representan mis habilidades y experiencia en estas áreas."
+  },
+  "projects": {
+    "title": "PROYECTOS",
+    "description": "Bienvenido a mi sección de Proyectos, donde podrás ver mis logros y capacidades como desarrollador web. Cada proyecto incluye una descripción detallada de las tareas que realicé, así como un enlace para que puedas ver el resultado final. Si estás interesado en trabajar conmigo en tu próximo proyecto, no dudes en contactarme."
   }
 }
