@@ -1,4 +1,4 @@
-import { IProject } from "@/shared/types";
+import { IProject, IProjectData } from "@/shared/types";
 import Image, { StaticImageData } from "next/image";
 import Link from "next/link";
 import { BsGithub } from "react-icons/bs";
@@ -18,31 +18,38 @@ type Props = {
   project: IProject;
   setPhotos: (value: StaticImageData[] | null) => void;
   setIndex: (value: number) => void;
+  data: IProjectData;
 };
 
-const Project = ({ project, setPhotos, setIndex }: Props) => {
+const Project = ({ project, setPhotos, setIndex, data }: Props) => {
+  const keys = Object.keys(project);
+  const [images, title, description, link, repository, tecnologies] = keys;
   return (
-    <div
-      // className="w-full flex shadow-inner rounded-md overflow-hidden drop-shadow-2xl shadow-white hover:blur-sm hover:skew-y-6 odd:bg-slate-500 even:bg-teal-800 odd:flex-row even:flex-row-reverse"
-      className="w-full flex flex-col shadow-lg shadow-indigo-500 bg-indigo-500/20 rounded-md overflow-hidden drop-shadow-2xl md:odd:flex-row md:even:flex-row-reverse"
-    >
+    <div className="w-full flex flex-col items-center shadow-lg shadow-indigo-500 bg-indigo-500/20 rounded-md overflow-hidden drop-shadow-2xl md:odd:flex-row md:even:flex-row-reverse">
       <div className="w-full md:w-[50%] flex flex-col justify-between p-4">
         <div>
           <h3 className="text-2xl xs:text-3xl font-bold">{project.title}</h3>
-          <p className="text-lg xl:text-xl">{project.description}</p>
+          <p className="text-lg xl:text-xl text-justify">
+            {data[project.title].description}
+          </p>
+          <div className="flex flex-wrap my-4 gap-2 justify-center">
+            {project.tecnologies.map((Icon, index) => (
+              <Icon key={index} className="text-4xl hover:scale-110 transition-all" />
+            ))}
+          </div>
         </div>
         <div className="flex justify-around">
           <Link
             href={project.link}
             className="hover:opacity-50 transition duration-500"
           >
-            <BiLinkExternal className="text-5xl" />
+            <BiLinkExternal className="text-5xl text-indigo-500 " />
           </Link>
           <Link
             href={project.repository}
             className="hover:opacity-50 transition duration-500"
           >
-            <BsGithub className="text-5xl" />
+            <BsGithub className="text-5xl text-indigo-500 " />
           </Link>
         </div>
       </div>

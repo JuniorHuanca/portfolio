@@ -1,4 +1,5 @@
 import { StaticImageData } from "next/image";
+import { IconType } from "react-icons";
 
 export enum SelectedPage {
   Home = "home",
@@ -35,6 +36,7 @@ export interface ITechskills {
 export interface IProjects {
   title: string;
   description: string;
+  data: IProjectData[];
 }
 
 export interface INavbar {
@@ -72,10 +74,17 @@ export interface ISoftskill {
   text: string;
 }
 
+export interface IProjectData {
+  [key: string]: {
+    [key: string]: string;
+  };
+}
+
 export interface IProject {
   images: StaticImageData[];
   title: string;
   description: string;
   link: string;
   repository: string;
+  tecnologies: IconType[];
 }

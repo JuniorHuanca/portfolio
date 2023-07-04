@@ -70,6 +70,18 @@
   },
   "projects": {
     "title": "PROJECTS",
-    "description": "Welcome to my Projects section, where you can see my achievements and capabilities as a web developer. Each project includes a detailed description of the tasks I performed, as well as a link for you to view the final result. If you are interested in working with me on your next project, feel free to contact me."
+    "description": "Welcome to my Projects section, where you can see my achievements and capabilities as a web developer. Each project includes a detailed description of the tasks I performed, as well as a link for you to view the final result. If you are interested in working with me on your next project, feel free to contact me.",
+    "data": [
+      {
+        "LaDionisia": {
+          "description": "An online wine shop with registration and access through email or Google account. Wide selection of wines that can be filtered and sorted. Secure payment with credit card or PayPal. Favorites feature for desired products. Users can save products to their favorites, while administrators have access to a panel for editing and managing products, as well as viewing statistics and registered users. Users can leave reviews and ratings, which can be reported and moderated by administrators."
+        }
+      },
+      {
+        "DigitalDreams": {
+          "description": "It is an e-commerce website for technology and computer-related products. The goal is to provide a convenient platform for purchasing quality products online. It will include advanced search filters, third-party authentication, and a secure payment gateway. Customers will be able to explore categories, compare products, read reviews, and make secure purchases. Third-party authentication will be provided to facilitate registration and access. In summary, we aim to provide a convenient and secure online shopping experience for technology enthusiasts."
+        }
+      }
+    ]
   }
 }

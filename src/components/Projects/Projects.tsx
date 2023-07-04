@@ -50,6 +50,7 @@ const Projects = ({ setSelectedPage, projects }: Props) => {
                 project={project}
                 setPhotos={setPhotos}
                 setIndex={setIndex}
+                data={projects.data[index]}
               />
             ))}
             {photos && (

@@ -15,45 +15,21 @@ import DDProducts from "@/assets/DigitalDreams/Products.png";
 import DDProfile from "@/assets/DigitalDreams/Profile.png";
 import DDReviews from "@/assets/DigitalDreams/Reviews.png";
 import DDDashboard from "@/assets/DigitalDreams/Dashboard.png";
-
-// export const projectsData = [
-//   {
-//     images: [
-//       LaDionisia,
-//       Accessibility,
-//       Cart,
-//       Checkout,
-//       Detail,
-//       Landing,
-//       NewsLetter,
-//       Products,
-//       Products01,
-//     ],
-//     title: "LaDionisia",
-//     description:
-//       "Un e-commerce de vinos, creado con tecnologias como, NextJs, React, Redux, NodeJs, Tailwind y otros.",
-//     link: "https://la-dionisia-front.vercel.app",
-//     repository: "https://github.com/laura-e24/LaDionisiaFront",
-//   },
-//   {
-//     images: [
-//       DDHome,
-//       DDDetail,
-//       DDLogin,
-//       DDProducts,
-//       DDProfile,
-//       DDReviews,
-//       DDDashboard,
-//     ],
-//     title: "DigitalDreams",
-//     description:
-//       "Un e-commerce electrónico que ofrece una variedad de productos relacionados con la tecnología y la informática. Creado con tecnologias como, NextJs, React, Redux, Prisma, PostgreSQL, NodeJs, Tailwind y otros.",
-//     link: "https://digitaldreams.vercel.app",
-//     repository: "https://github.com/JuniorHuanca/DigitalDreams",
-//   }
-// ];
-
-
+import {
+  SiNextdotjs,
+  SiRedux,
+  SiCss3,
+  SiTailwindcss,
+  SiJavascript,
+  SiTypescript,
+  SiNodedotjs,
+  SiPrisma,
+  SiPhp,
+  SiExpress,
+} from "react-icons/si";
+import { FaReact } from "react-icons/fa";
+import { BiLogoPostgresql } from "react-icons/bi";
+import { AiFillHtml5 } from "react-icons/ai";
 
 export const projectsData = [
   {
@@ -70,9 +46,23 @@ export const projectsData = [
     ],
     title: "LaDionisia",
     description:
-      "Un e-commerce de vinos, creado con tecnologias como, NextJs, React, Redux, NodeJs, Tailwind y otros.",
+      "La Dionisia es una vinoteca online que ofrece registro y acceso con email o cuenta de Google, permitiendo a los usuarios explorar, filtrar y ordenar una amplia variedad de vinos. El pago se realiza con tarjeta de crédito o PayPal, y se envía un mensaje de confirmación por email. Los usuarios pueden guardar productos en favoritos, y los administradores tienen acceso a un panel para editar y gestionar productos, así como ver estadísticas y usuarios registrados. Los usuarios pueden dejar reseñas y puntuaciones, que pueden ser reportadas y moderadas por los administradores.",
     link: "https://la-dionisia-front.vercel.app",
     repository: "https://github.com/laura-e24/LaDionisiaFront",
+    tecnologies: [
+      SiNextdotjs,
+      FaReact,
+      SiRedux,
+      SiCss3,
+      SiTailwindcss,
+      SiJavascript,
+      SiTypescript,
+      SiNodedotjs,
+      SiPrisma,
+      SiPhp,
+      SiExpress,
+      BiLogoPostgresql,
+    ],
   },
   {
     images: [
@@ -89,5 +79,16 @@ export const projectsData = [
       "Un e-commerce electrónico que ofrece una variedad de productos relacionados con la tecnología y la informática. Creado con tecnologias como, NextJs, React, Redux, Prisma, PostgreSQL, NodeJs, Tailwind y otros.",
     link: "https://digitaldreams.vercel.app",
     repository: "https://github.com/JuniorHuanca/DigitalDreams",
+    tecnologies: [
+      SiNextdotjs,
+      FaReact,
+      SiRedux,
+      SiCss3,
+      SiTailwindcss,
+      SiTypescript,
+      SiNodedotjs,
+      SiPrisma,
+      BiLogoPostgresql,
+    ],
   },
 ];
