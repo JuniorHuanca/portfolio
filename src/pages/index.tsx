@@ -75,7 +75,7 @@ export default function App({
           navbar={navbar}
         />
         <motion.div
-          className="fixed bg-blue-950 dark:bg-purple-800 left-0 top-16 right-0 h-1 origin-left z-10"
+          className="fixed bg-blue-950 dark:bg-purple-800 left-0 top-16 right-0 h-1 origin-left z-[1]"
           style={{ scaleX }}
         />
         <Home setSelectedPage={setSelectedPage} home={home} />

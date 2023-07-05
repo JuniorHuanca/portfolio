@@ -37,6 +37,7 @@ export interface IProjects {
   title: string;
   description: string;
   data: IProjectData[];
+  buttons: { [key: string]: string };
 }
 
 export interface INavbar {

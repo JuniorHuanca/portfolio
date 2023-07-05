@@ -40,10 +40,7 @@ const Projects = ({ setSelectedPage, projects }: Props) => {
             </div>
           </div>
           <p className="text-xl">{projects.description}</p>
-          <motion.div
-            className="flex justify-center w-full gap-12 flex-wrap mt-6"
-            {...motionDivProps}
-          >
+          <div className="flex justify-center w-full gap-12 flex-wrap mt-6">
             {projectsData.map((project: IProject, index) => (
               <Project
                 key={index}
@@ -51,12 +48,13 @@ const Projects = ({ setSelectedPage, projects }: Props) => {
                 setPhotos={setPhotos}
                 setIndex={setIndex}
                 data={projects.data[index]}
+                buttons={projects.buttons}
               />
             ))}
             {photos && (
               <Gallery photos={photos} index={index} setPhotos={setPhotos} />
             )}
-          </motion.div>
+          </div>
         </motion.div>
       </motion.div>
     </section>

@@ -13,9 +13,9 @@
       "es": "Spanish"
     },
     "mode": {
-      "system": "System 💻",
-      "light": "Light ☀️",
-      "dark": "Dark 🌙"
+      "system": "System",
+      "light": "Light",
+      "dark": "Dark"
     }
   },
   "home": {
@@ -71,6 +71,10 @@
   "projects": {
     "title": "PROJECTS",
     "description": "Welcome to my Projects section, where you can see my achievements and capabilities as a web developer. Each project includes a detailed description of the tasks I performed, as well as a link for you to view the final result. If you are interested in working with me on your next project, feel free to contact me.",
+    "buttons": {
+      "watch": "View Project",
+      "repository": "Repository"
+    },
     "data": [
       {
         "LaDionisia": {

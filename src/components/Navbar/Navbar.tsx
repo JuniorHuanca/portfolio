@@ -53,7 +53,7 @@ const Navbar = ({
                         selectedPage === lowerCasePage
                           ? "text-blue-500 dark:text-blue-500"
                           : ""
-                      } px-3 py-2 rounded-md transition duration-500 hover:text-blue-500 dark:hover:text-blue-500 text-lg font-bold`}
+                      } px-3 py-2 transition duration-500 hover:text-blue-500 dark:hover:text-blue-500 text-lg font-bold`}
                       onClick={() => {
                         setSelectedPage(lowerCasePage);
                       }}
@@ -67,30 +67,8 @@ const Navbar = ({
           </div>
           <div className="hidden lg:block">
             <div className="ml-4 flex items-center lg:ml-6">
-              <div className="relative">
-                <ModeSelector mode={mode} />
-                <div className="pointer-events-none absolute inset-y-0 right-0 flex items-center px-2">
-                  <svg
-                    className="h-4 w-4"
-                    viewBox="0 0 20 20"
-                    fill="currentColor"
-                  >
-                    <path fillRule="evenodd" d="M10 12l-6-6h12l-6 6z" />
-                  </svg>
-                </div>
-              </div>
-              <div className="relative">
-                <LenguageSelector languages={languages} locale={locale} />
-                <div className="pointer-events-none absolute inset-y-0 right-0 flex items-center px-2">
-                  <svg
-                    className="h-4 w-4"
-                    viewBox="0 0 20 20"
-                    fill="currentColor"
-                  >
-                    <path fillRule="evenodd" d="M10 12l-6-6h12l-6 6z" />
-                  </svg>
-                </div>
-              </div>
+              <ModeSelector mode={mode} />
+              <LenguageSelector languages={languages} locale={locale} />
             </div>
           </div>
           <div className="-mr-2 flex lg:hidden">
@@ -164,15 +142,9 @@ const Navbar = ({
           })}
         </div>
         <div className="pt-4 pb-3 border-t border-gray-700">
-          <div className="flex items-center px-5 sm:px-6">
-            <div className="flex-shrink-0">Idioma</div>
-            <div className="ml-3">
-              <LenguageSelector languages={languages} locale={locale} />
-            </div>
-            <div className="flex-shrink-0">Modo</div>
-            <div className="ml-3">
-              <ModeSelector mode={mode} />
-            </div>
+          <div className="flex items-center justify-center px-5 sm:px-6">
+            <LenguageSelector languages={languages} locale={locale} />
+            <ModeSelector mode={mode} />
           </div>
         </div>
       </div>

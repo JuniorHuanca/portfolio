@@ -13,9 +13,9 @@
       "es": "Español"
     },
     "mode": {
-      "system": "Sistema 💻",
-      "light": "Claro ☀️",
-      "dark": "Oscuro 🌙"
+      "system": "Sistema",
+      "light": "Claro",
+      "dark": "Oscuro"
     }
   },
   "home": {
@@ -71,6 +71,10 @@
   "projects": {
     "title": "PROYECTOS",
     "description": "Bienvenido a mi sección de Proyectos, donde podrás ver mis logros y capacidades como desarrollador web. Cada proyecto incluye una descripción detallada de las tareas que realicé, así como un enlace para que puedas ver el resultado final. Si estás interesado en trabajar conmigo en tu próximo proyecto, no dudes en contactarme.",
+    "buttons": {
+      "watch": "Ver proyecto",
+      "repository": "Repositorio"
+    },
     "data": [
       {
         "LaDionisia": {

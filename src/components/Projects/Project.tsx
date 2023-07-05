@@ -3,6 +3,7 @@ import Image, { StaticImageData } from "next/image";
 import Link from "next/link";
 import { BsGithub } from "react-icons/bs";
 import { BiLinkExternal } from "react-icons/bi";
+import { motion } from "framer-motion";
 
 import { Swiper, SwiperSlide } from "swiper/react";
 import {
@@ -13,43 +14,51 @@ import {
   EffectCreative,
 } from "swiper/modules";
 import Gallery from "../Gallery";
+import { motionDivProps } from "@/shared/config";
 
 type Props = {
   project: IProject;
   setPhotos: (value: StaticImageData[] | null) => void;
   setIndex: (value: number) => void;
   data: IProjectData;
+  buttons: { [key: string]: string };
 };
 
-const Project = ({ project, setPhotos, setIndex, data }: Props) => {
-  const keys = Object.keys(project);
-  const [images, title, description, link, repository, tecnologies] = keys;
+const Project = ({ project, setPhotos, setIndex, data, buttons }: Props) => {
   return (
-    <div className="w-full flex flex-col items-center shadow-lg shadow-indigo-500 bg-indigo-500/20 rounded-md overflow-hidden drop-shadow-2xl md:odd:flex-row md:even:flex-row-reverse">
+    <motion.div
+      className="w-full flex flex-col items-center shadow-lg shadow-indigo-500 bg-indigo-500/20 rounded-md overflow-hidden drop-shadow-2xl md:odd:flex-row md:even:flex-row-reverse"
+      {...motionDivProps}
+    >
       <div className="w-full md:w-[50%] flex flex-col justify-between p-4">
         <div>
           <h3 className="text-2xl xs:text-3xl font-bold">{project.title}</h3>
           <p className="text-lg xl:text-xl text-justify">
             {data[project.title].description}
           </p>
-          <div className="flex flex-wrap my-4 gap-2 justify-center">
+          <div className="flex flex-wrap my-6 gap-2 justify-center">
             {project.tecnologies.map((Icon, index) => (
-              <Icon key={index} className="text-4xl hover:scale-110 transition-all" />
+              <Icon
+                key={index}
+                className="text-4xl hover:scale-110 transition-all"
+              />
             ))}
           </div>
         </div>
-        <div className="flex justify-around">
+        <div className="flex flex-wrap gap-2 justify-around">
           <Link
             href={project.link}
-            className="hover:opacity-50 transition duration-500"
+            className="flex justify-center items-center dark:bg-indigo-800 text-white bg-blue-950 border-2 dark:border-indigo-800 border-blue-900 rounded-xl p-2 gap-3 hover:scale-110 transition duration-500"
           >
-            <BiLinkExternal className="text-5xl text-indigo-500 " />
+            <span className="font-bold xs:text-lg">{buttons.watch}</span>
+            <BiLinkExternal className="text-4xl" />
           </Link>
           <Link
             href={project.repository}
-            className="hover:opacity-50 transition duration-500"
+            className="flex justify-center items-center border-2 dark:border-indigo-800 border-blue-900 rounded-xl p-2 gap-3 hover:scale-110 transition duration-500"
           >
-            <BsGithub className="text-5xl text-indigo-500 " />
+            <span className="font-bold xs:text-lg">{buttons.repository}</span>
+            <BsGithub className="text-4xl" />
           </Link>
         </div>
       </div>
@@ -119,7 +128,7 @@ const Project = ({ project, setPhotos, setIndex, data }: Props) => {
         </Swiper>
       </div>
       {/* <Gallery photos={project.images} /> */}
-    </div>
+    </motion.div>
   );
 };
 
