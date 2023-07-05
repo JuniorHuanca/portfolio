@@ -39,7 +39,9 @@ const Home = ({ setSelectedPage, home }: Props) => {
               <span className="invisible w-6 text-sm md:visible md:w-[850px] absolute md:-left-20 md:-top-12 sm:text-8xl font-bold text-black opacity-10 dark:text-white">
                 JUNIOR HUANCA
               </span>
-              <h2 className="text-3xl xs:text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold">JUNIOR HUANCA</h2>
+              <h2 className="text-3xl xs:text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold">
+                JUNIOR HUANCA
+              </h2>
               <h1 className="text-2xl xs:text-3xl">{home.career}</h1>
             </div>
           </div>
@@ -56,11 +58,7 @@ const Home = ({ setSelectedPage, home }: Props) => {
           className="my-10 md:m-0 relative flex-1 md:flex-[2_2_0%] flex border border-gray-500 rounded-tl-[150px] rounded-tr-[150px] dark:border-white max-w-[500px]"
           {...motionDivProps}
         >
-          <Image
-            alt="home-pageGraphic"
-            src={Person}
-            priority
-          />
+          <Image alt="home-pageGraphic" src={Person} priority />
           <a
             href="/Junior Huanca CV.pdf"
             download

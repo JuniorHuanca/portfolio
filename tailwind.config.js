@@ -7,6 +7,47 @@ module.exports = {
   ],
   theme: {
     extend: {
+      animation: {
+        "bell-swing": "bell-swing 2s ease-in-out infinite",
+        "bell-swing-scale": "bell-swing-scale 2s ease-in-out infinite",
+        typing:
+          "typing 4s steps(38) 1s infinite alternate, blink 1s steps(1) infinite",
+      },
+      keyframes: {
+        "bell-swing": {
+          "0%, 100%": { transform: "rotate(0deg)" },
+          "25%": { transform: "rotate(10deg)" },
+          "50%": { transform: "rotate(0deg)" },
+          "75%": { transform: "rotate(-10deg)" },
+        },
+        "bell-swing-scale": {
+          "0%, 100%": { transform: "rotate(0deg) scale(1)" },
+          "25%": { transform: "rotate(10deg) scale(1.2)" },
+          "50%": { transform: "rotate(0deg) scale(1)" },
+          "75%": { transform: "rotate(-10deg) scale(1.2)" },
+        },
+        typing: {
+          from: {
+            width: 0,
+          },
+          to: {
+            width: "100%",
+          },
+        },
+        "typing-reset": {
+          from: {
+            width: "100%",
+          },
+          to: {
+            width: 0,
+          },
+        },
+        blink: {
+          "50%": {
+            borderColor: "transparent",
+          },
+        },
+      },
       colors: {
         blue: {
           50: "#e4eeff",

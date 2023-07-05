@@ -14,80 +14,114 @@ import CssIcon from "@/assets/96/css.png";
 import HtmlIcon from "@/assets/96/html.png";
 import PrismaIcon from "@/assets/96/prisma.png";
 
+import {
+  SiNextdotjs,
+  SiRedux,
+  SiCss3,
+  SiTailwindcss,
+  SiJavascript,
+  SiTypescript,
+  SiNodedotjs,
+  SiPrisma,
+  SiPhp,
+  SiExpress,
+  SiGit,
+  SiSequelize,
+  SiHtml5,
+  SiReact,
+} from "react-icons/si";
+import { FaNpm } from "react-icons/fa";
+import { BiLogoPostgresql } from "react-icons/bi";
+
 export const technologies = [
   {
     name: "Javascript",
     image: JavascriptIcon,
     url: "",
+    icon: SiJavascript,
   },
   {
     name: "React",
     image: ReactIcon,
     url: "",
+    icon: SiReact,
   },
   {
     name: "Typescript",
     image: TypescriptIcon,
     url: "",
+    icon: SiTypescript,
   },
   {
     name: "Nextjs",
     image: NextjsIcon,
     url: "",
+    icon: SiNextdotjs,
   },
   {
     name: "Redux",
     image: ReduxIcon,
     url: "",
+    icon: SiRedux,
   },
   {
     name: "Npm",
     image: NpmIcon,
     url: "",
+    icon: FaNpm,
   },
   {
     name: "Git",
     image: GitIcon,
     url: "",
+    icon: SiGit,
   },
   {
     name: "Nodejs",
     image: NodejsIcon,
     url: "",
+    icon: SiNodedotjs,
   },
   {
     name: "Express",
     image: ExpressIcon,
     url: "",
+    icon: SiExpress,
   },
   {
     name: "Postgresql",
     image: PostgresqlIcon,
     url: "",
+    icon: BiLogoPostgresql,
   },
   {
     name: "Sequelize",
     image: SequelizeIcon,
     url: "",
+    icon: SiSequelize,
   },
   {
     name: "Prisma",
     image: PrismaIcon,
     url: "",
+    icon: SiPrisma,
   },
   {
     name: "Tailwind",
     image: TailwindIcon,
     url: "",
+    icon: SiTailwindcss,
   },
   {
     name: "Css",
     image: CssIcon,
     url: "",
+    icon: SiCss3,
   },
   {
     name: "Html",
     image: HtmlIcon,
     url: "",
+    icon: SiHtml5,
   },
 ];

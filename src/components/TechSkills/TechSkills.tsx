@@ -3,6 +3,7 @@ import { motion } from "framer-motion";
 import Subtitle from "../Subtitle";
 import { technologies } from "@/shared/data/Technologies";
 import TechSkill from "./TechSkill";
+import { motionDivProps } from "@/shared/config";
 type Props = {
   setSelectedPage: (value: SelectedPage) => void;
   techskills: ITechskills;
@@ -22,24 +23,13 @@ const TechSkills = ({ setSelectedPage, techskills }: Props) => {
       <motion.div
         onViewportEnter={() => setSelectedPage(SelectedPage.TechSkills)}
       >
-        <motion.div
-          className="md:my-5 md:w-full"
-          initial="hidden"
-          whileInView="visible"
-          transition={{ duration: 0.5 }}
-          variants={{
-            hidden: { opacity: 0, x: -50 },
-            visible: { opacity: 1, x: 0 },
-          }}
-        >
+        <motion.div className="md:my-5 md:w-full" {...motionDivProps}>
           <Subtitle>{techskills.title}</Subtitle>
           <p className="text-xl">{techskills.description}</p>
           <motion.div
             className="flex justify-center w-full gap-8 flex-wrap mt-6"
+            {...motionDivProps}
             variants={container}
-            initial="hidden"
-            whileInView="visible"
-            viewport={{ once: true, amount: 0.2 }}
           >
             {technologies.map((tech, index) => (
               <TechSkill

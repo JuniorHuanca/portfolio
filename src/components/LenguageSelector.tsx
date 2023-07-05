@@ -1,37 +1,5 @@
-// import { useRouter } from "next/router";
-// import { ChangeEvent } from "react";
-
-// type Props = {
-//   languages: { [key: string]: string };
-//   locale: string;
-// };
-
-// function LenguageSelector({ languages, locale }: Props) {
-//   const router = useRouter();
-//   const handleChangeLang = (e: ChangeEvent<HTMLSelectElement>) => {
-//     router.push(router.pathname, router.pathname, {
-//       locale: e.target.value,
-//     });
-//   };
-//   return (
-//     <select
-//       value={locale}
-//       onChange={handleChangeLang}
-//       className="sm:leading-5 block md:appearance-none bg-transparent border-none pl-3 pr-6 py-2 rounded-md text-lg font-bold"
-//     >
-//       {Object.keys(languages).map((key, index) => (
-//         <option key={index} value={key} className="bg-purple-500">
-//           {languages[key]}
-//         </option>
-//       ))}
-//     </select>
-//   );
-// }
-
-// export default LenguageSelector;
-
 import { useRouter } from "next/router";
-import { ChangeEvent, MouseEvent, useState } from "react";
+import { MouseEvent, useState } from "react";
 import { TbLanguage } from "react-icons/tb";
 type Props = {
   languages: { [key: string]: string };
@@ -49,12 +17,11 @@ function LenguageSelector({ languages, locale }: Props) {
   };
   return (
     <div>
-      <button
+      <div
         onClick={() => setDropdown(!dropdown)}
         className="px-3 py-2 transition duration-500 hover:text-blue-500 dark:hover:text-blue-500 text-lg font-bold text-center inline-flex items-center"
-        type="button"
       >
-        <TbLanguage className="mr-2 text-2xl"></TbLanguage>
+        <TbLanguage className="mr-2 text-2xl" />
         <span>{languages[locale]}</span>
         <svg
           className="w-4 h-4 ml-2"
@@ -65,13 +32,13 @@ function LenguageSelector({ languages, locale }: Props) {
           xmlns="http://www.w3.org/2000/svg"
         >
           <path
-            stroke-linecap="round"
+            strokeLinecap="round"
             stroke-linejoin="round"
             stroke-width="3"
             d="M19 9l-7 7-7-7"
-          ></path>
+          />
         </svg>
-      </button>
+      </div>
       <div
         className={`${
           dropdown ? "block" : "hidden"

@@ -18,22 +18,10 @@ const ModeSelector = ({ mode }: Props) => {
     dark: <MdModeNight className="mr-2 text-2xl" />,
   };
   return (
-    // <select
-    //   value={theme}
-    //   onChange={(e) => setTheme(e.target.value)}
-    //   className="sm:leading-5 block md:appearance-none bg-transparent border-none pl-3 pr-6 py-2 rounded-md text-lg font-bold"
-    // >
-    //   {Object.keys(mode).map((key, index) => (
-    //     <option key={index} className="bg-purple-500" value={key}>
-    //       {mode[key]}
-    //     </option>
-    //   ))}
-    // </select>
     <div>
-      <button
+      <div
         onClick={() => setDropdown(!dropdown)}
         className="px-3 py-2 transition duration-500 hover:text-blue-500 dark:hover:text-blue-500 text-lg font-bold text-center inline-flex items-center"
-        type="button"
       >
         {modesWithIcon[theme as string]}
         <span>{mode[theme as string]}</span>
@@ -46,13 +34,13 @@ const ModeSelector = ({ mode }: Props) => {
           xmlns="http://www.w3.org/2000/svg"
         >
           <path
-            stroke-linecap="round"
+            strokeLinecap="round"
             stroke-linejoin="round"
             stroke-width="3"
             d="M19 9l-7 7-7-7"
-          ></path>
+          />
         </svg>
-      </button>
+      </div>
       <div
         className={`${
           dropdown ? "block" : "hidden"

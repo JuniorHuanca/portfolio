@@ -1,7 +1,7 @@
 import Link from "next/link";
 import LenguageSelector from "../LenguageSelector";
 import { INavbar, SelectedPage } from "@/shared/types";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import AnchorLink from "react-anchor-link-smooth-scroll";
 import ModeSelector from "../ModeSelector";
 
@@ -19,16 +19,22 @@ const Navbar = ({
   setSelectedPage,
 }: Props) => {
   const [isMobileMenuOpen, setMobileMenuOpen] = useState(false);
-
+  const [hasMounted, setHasMounted] = useState(false);
+  const { links, mode, languages, locale } = navbar;
   const toggleMobileMenu = () => {
     setMobileMenuOpen(!isMobileMenuOpen);
   };
-
   const navbarBackground = isTopOfPage
     ? "text-blue-900 dark:text-white"
     : "bg-blue-950 dark:bg-purple-800 text-white";
 
-  const { links, mode, languages, locale } = navbar;
+  useEffect(() => {
+    setHasMounted(true);
+  }, []);
+
+  if (!hasMounted) {
+    return null;
+  }
   return (
     <nav className={`${navbarBackground} sticky top-0 z-10`}>
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
