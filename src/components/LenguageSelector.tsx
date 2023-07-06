@@ -33,8 +33,8 @@ function LenguageSelector({ languages, locale }: Props) {
         >
           <path
             strokeLinecap="round"
-            stroke-linejoin="round"
-            stroke-width="3"
+            strokeLinejoin="round"
+            strokeWidth="3"
             d="M19 9l-7 7-7-7"
           />
         </svg>
