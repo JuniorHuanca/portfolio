@@ -48,6 +48,7 @@ export interface IContacme {
   subject: string;
   message: string;
   errors: { [key: string]: string };
+  status: { [key: string]: string };
 }
 
 export interface INavbar {

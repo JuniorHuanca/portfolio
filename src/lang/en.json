@@ -102,6 +102,11 @@
       "message": "Please enter the text of the message.",
       "minmessage": "The text must have at least 10 characters.",
       "error": "Error, something went wrong."
+    },
+    "status": {
+      "loading": "Sending email...",
+      "success": "Email sent successfully",
+      "error": "Email not sent. Something went wrong."
     }
   }
 }

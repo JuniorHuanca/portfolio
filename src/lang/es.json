@@ -102,6 +102,11 @@
       "message": "Por favor ingresa el texto del mensaje.",
       "minmessage": "El texto debe tener al menos 10 caracteres",
       "error": "Error algo salió mal"
+    },
+    "status": {
+      "loading": "Enviando correo...",
+      "success": "Correo enviado correctamente",
+      "error": "Correo no enviado. Algo salió mal."
     }
   }
 }

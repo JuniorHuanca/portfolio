@@ -50,7 +50,13 @@ const ContactMe = ({ setSelectedPage, contactme }: Props) => {
     { resetForm }: { resetForm: any }
   ) {
     try {
-      sendEmail({ ...values });
+      toast.promise(sendEmail({ ...values }), {
+        loading: `${contactme.status.loading}`,
+        success: () => {
+          return `${contactme.status.success}`;
+        },
+        error: `${contactme.status.error}`,
+      });
       resetForm();
     } catch (error) {
       toast.error(contactme.errors.error);
