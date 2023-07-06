@@ -40,6 +40,16 @@ export interface IProjects {
   buttons: { [key: string]: string };
 }
 
+export interface IContacme {
+  title: string;
+  description: string;
+  name: string;
+  email: string;
+  subject: string;
+  message: string;
+  errors: { [key: string]: string };
+}
+
 export interface INavbar {
   links: ILinks;
   languages: ILanguages;

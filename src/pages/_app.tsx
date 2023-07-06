@@ -7,10 +7,12 @@ import "swiper/css/navigation";
 import "swiper/css/thumbs";
 import "swiper/css/pagination";
 import "swiper/css/effect-cube";
+import { Toaster } from "sonner";
 const App = ({ Component, pageProps }: AppProps) => {
   return (
     <ThemeProvider enableSystem={true} attribute="class">
       <Component {...pageProps} />
+      <Toaster position="top-left" />
     </ThemeProvider>
   );
 };

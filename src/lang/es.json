@@ -87,5 +87,21 @@
         }
       }
     ]
+  },
+  "contactme": {
+    "title": "CONTÁCTAME",
+    "description": "Si están buscando un desarrollador web full-stack confiable, no dudes en contactarme. Estoy emocionado de conectarnos y ver cómo puedo aportar valor a tus proyectos. Juntos, podemos crear soluciones impactantes y hacer realidad tus ideas. ¡Espero hablar contigo pronto!",
+    "name": "NOMBRE",
+    "email": "CORREO",
+    "subject": "ASUNTO",
+    "message": "MENSAJE",
+    "errors": {
+      "name": "Por favor ingresa tu nombre.",
+      "email": "Por favor ingresa un email válido.",
+      "subject": "Por favor ingresa el asunto del mensaje.",
+      "message": "Por favor ingresa el texto del mensaje.",
+      "minmessage": "El texto debe tener al menos 10 caracteres",
+      "error": "Error algo salió mal"
+    }
   }
 }

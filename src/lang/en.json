@@ -87,5 +87,21 @@
         }
       }
     ]
+  },
+  "contactme": {
+    "title": "CONTACT ME",
+    "description": "If you are looking for a reliable full-stack web developer, don't hesitate to contact me. I'm excited to connect and see how I can bring value to your projects. Together, we can create impactful solutions and bring your ideas to life. I look forward to speaking with you soon!",
+    "name": "NAME",
+    "email": "EMAIL",
+    "subject": "SUBJECT",
+    "message": "MESSAGE",
+    "errors": {
+      "name": "Please enter your name.",
+      "email": "Please enter a valid email.",
+      "subject": "Please enter the subject of the message.",
+      "message": "Please enter the text of the message.",
+      "minmessage": "The text must have at least 10 characters.",
+      "error": "Error, something went wrong."
+    }
   }
 }
