@@ -117,7 +117,7 @@ const Project = ({ project, setPhotos, setIndex, data, buttons }: Props) => {
                 className="h-[180px] xs:h-auto"
                 src={e}
                 alt={project.title}
-                priority
+                loading="lazy"
                 onClick={() => {
                   setPhotos(project.images);
                   setIndex(index);
