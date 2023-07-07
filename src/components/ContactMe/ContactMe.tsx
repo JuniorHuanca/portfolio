@@ -185,7 +185,7 @@ const ContactMe = ({ setSelectedPage, contactme }: Props) => {
                 className="w-full"
                 alt="contact-us-page-graphic"
                 src={Persona}
-                priority
+                loading="lazy"
               />
             </div>
           </motion.div>

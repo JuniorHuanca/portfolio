@@ -10,12 +10,11 @@ type Props = {
 };
 
 const Gallery = ({ photos, index, setPhotos }: Props) => {
-
   const [thumbsSwiper, setThumbsSwiper] = useState<SwiperRef>();
   return (
     <>
       <div className="flex justify-center items-center fixed top-0 right-0 w-screen h-screen bg-black/70 dark:bg-black/20 z-10">
-        <div className="relative w-full xs:w-[85%] h-auto sm:h-[90%] bg-black xs:p-6 py-1 gap-1 xs:gap-2 rounded-lg">
+        <div className="relative w-full xs:w-[85%] h-auto sm:h-[90%] bg-black xs:p-2 py-1 gap-1 xs:gap-2 rounded-lg">
           <Swiper
             loop={true}
             spaceBetween={10}
@@ -27,7 +26,7 @@ const Gallery = ({ photos, index, setPhotos }: Props) => {
           >
             {photos.map((photo, index) => (
               <SwiperSlide key={index}>
-                <Image src={photo} alt={"Error"} />
+                <Image src={photo} alt={"Error"} loading="lazy" />
               </SwiperSlide>
             ))}
           </Swiper>
@@ -43,7 +42,7 @@ const Gallery = ({ photos, index, setPhotos }: Props) => {
           >
             {photos.map((photo, index) => (
               <SwiperSlide key={index}>
-                <Image src={photo} alt={"Error"} />
+                <Image src={photo} alt={"Error"} loading="lazy" />
               </SwiperSlide>
             ))}
           </Swiper>

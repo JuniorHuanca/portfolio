@@ -58,7 +58,12 @@ const Home = ({ setSelectedPage, home }: Props) => {
           className="my-10 md:m-0 relative flex-1 md:flex-[2_2_0%] flex border border-gray-500 rounded-tl-[150px] rounded-tr-[150px] dark:border-white max-w-[500px]"
           {...motionDivProps}
         >
-          <Image alt="home-pageGraphic" src={Person} priority />
+          <Image
+            src={Person}
+            alt="Picture of the author"
+            priority
+            sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+          />
           <a
             href="/Junior Huanca CV.pdf"
             download
