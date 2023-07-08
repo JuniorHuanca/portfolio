@@ -21,7 +21,7 @@ const ModeSelector = ({ mode }: Props) => {
     <div>
       <div
         onClick={() => setDropdown(!dropdown)}
-        className="px-3 py-2 transition duration-500 hover:text-blue-500 dark:hover:text-blue-500 text-lg font-bold text-center inline-flex items-center"
+        className="px-3 py-2 transition duration-500 hover:text-blue-500 dark:hover:text-light-blue-400 text-lg font-bold text-center inline-flex items-center"
       >
         {modesWithIcon[theme as string]}
         <span>{mode[theme as string]}</span>

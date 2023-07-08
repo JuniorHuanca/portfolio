@@ -57,9 +57,9 @@ const Navbar = ({
                       key={index}
                       className={`${
                         selectedPage === lowerCasePage
-                          ? "text-blue-500 dark:text-blue-500"
+                          ? "text-blue-500 dark:text-light-blue-400"
                           : ""
-                      } px-3 py-2 transition duration-500 hover:text-blue-500 dark:hover:text-blue-500 text-lg font-bold`}
+                      } px-3 py-2 transition duration-500 hover:text-blue-500 dark:hover:text-light-blue-400 text-lg font-bold`}
                       onClick={() => {
                         setSelectedPage(lowerCasePage);
                       }}
