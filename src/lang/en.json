@@ -108,5 +108,8 @@
       "success": "Email sent successfully",
       "error": "Email not sent. Something went wrong."
     }
+  },
+  "footer": {
+    "text": "JuniorHuanca. All rights reserved."
   }
 }

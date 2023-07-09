@@ -4,6 +4,7 @@ import Navbar from "@/components/Navbar/Navbar";
 import {
   IAboutme,
   IContacme,
+  IFooter,
   IHome,
   INavbar,
   IProjects,
@@ -28,6 +29,7 @@ type Props = {
   techskills: ITechskills;
   projects: IProjects;
   contactme: IContacme;
+  footer: IFooter;
 };
 export default function App({
   home,
@@ -37,6 +39,7 @@ export default function App({
   techskills,
   projects,
   contactme,
+  footer,
 }: Props) {
   const [isTopOfPage, setIsTopOfPage] = useState<boolean>(true);
   const [selectedPage, setSelectedPage] = useState<SelectedPage>(
@@ -92,7 +95,7 @@ export default function App({
         <Projects setSelectedPage={setSelectedPage} projects={projects} />
         <LineGradient />
         <ContactMe setSelectedPage={setSelectedPage} contactme={contactme} />
-        <Footer />
+        <Footer footer={footer} />
       </div>
     </>
   );
@@ -109,6 +112,7 @@ export async function getStaticProps({ locale }: { locale: string }) {
       techskills: response.default.techskills,
       projects: response.default.projects,
       contactme: response.default.contactme,
+      footer: response.default.footer,
     },
   };
 }

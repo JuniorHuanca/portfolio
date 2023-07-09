@@ -108,5 +108,8 @@
       "success": "Correo enviado correctamente",
       "error": "Correo no enviado. Algo salió mal."
     }
+  },
+  "footer": {
+    "text": "JuniorHuanca. Todos los derechos reservados."
   }
 }

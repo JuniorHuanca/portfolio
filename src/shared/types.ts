@@ -51,6 +51,10 @@ export interface IContacme {
   status: { [key: string]: string };
 }
 
+export interface IFooter {
+  [key: string]: string;
+}
+
 export interface INavbar {
   links: ILinks;
   languages: ILanguages;
