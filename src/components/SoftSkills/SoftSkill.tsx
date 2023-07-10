@@ -17,7 +17,7 @@ const SoftSkill = ({ image, title, text }: Props) => {
   const [photo, setPhoto] = useState<StaticImageData>(defaultPhoto);
   useEffect(() => {
     (async () => {
-      const response = await import(`@/assets/${image}.png`);
+      const response = await import(`@/assets/${image}.webp`);
       setPhoto(response.default);
     })();
   }, []);
