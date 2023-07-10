@@ -1,7 +1,7 @@
 import { IAboutme, SelectedPage } from "@/shared/types";
 import { motion } from "framer-motion";
 import Image from "next/image";
-import Software from "@/assets/software.jpg";
+import Software from "@/assets/software.webp";
 import Subtitle from "../Subtitle";
 import { motionDivProps } from "@/shared/config";
 type Props = {

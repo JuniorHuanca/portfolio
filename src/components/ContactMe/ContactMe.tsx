@@ -5,7 +5,7 @@ import { IContacme, SelectedPage } from "@/shared/types";
 import { motion } from "framer-motion";
 import Image from "next/image";
 import Subtitle from "../Subtitle";
-import Persona from "@/assets/persona.jpeg";
+import Persona from "@/assets/persona.webp";
 import { sendEmail } from "@/shared/email";
 import { BsFillFilePersonFill, BsFileTextFill } from "react-icons/bs";
 import { MdAlternateEmail, MdTitle } from "react-icons/md";

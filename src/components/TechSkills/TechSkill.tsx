@@ -16,7 +16,7 @@ const TechSkill = (props: Props) => {
       <div className="hover:animate-bell-swing-scale">
         <Image src={props.image} alt={props.name} className="rounded-2xl" />
       </div>
-      <h2 className="font-playfair text-2xl font-bold">{props.name}</h2>
+      <h3 className="font-playfair text-2xl font-bold">{props.name}</h3>
     </motion.div>
   );
 };

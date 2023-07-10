@@ -1,9 +1,9 @@
-import Adaptabilidad from "@/assets/Adaptabilidad.png";
-import Colaboracion from "@/assets/Colaboracion.png";
-import Comunicacion from "@/assets/Comunicacion.png";
-import Liderazgo from "@/assets/Liderazgo.png";
-import Organizacion from "@/assets/Organizacion.png";
-import ResolucionProblemas from "@/assets/ResolucionProblemas.png";
+import Adaptabilidad from "@/assets/Adaptabilidad.webp";
+import Colaboracion from "@/assets/Colaboracion.webp";
+import Comunicacion from "@/assets/Comunicacion.webp";
+import Liderazgo from "@/assets/Liderazgo.webp";
+import Organizacion from "@/assets/Organizacion.webp";
+import ResolucionProblemas from "@/assets/ResolucionProblemas.webp";
 export const softskills = [
   {
     image: Comunicacion,

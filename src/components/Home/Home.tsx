@@ -1,9 +1,7 @@
 import { IHome, SelectedPage } from "@/shared/types";
 import { motion } from "framer-motion";
 import Image from "next/image";
-import Github from "@/assets/96/github.png";
-import Linkedin from "@/assets/96/linkedin.png";
-import Person from "@/assets/me.png";
+import Person from "@/assets/me.webp";
 import Link from "next/link";
 import AnchorLink from "react-anchor-link-smooth-scroll";
 import { BsGithub, BsLinkedin } from "react-icons/bs";

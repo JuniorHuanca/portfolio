@@ -7,7 +7,6 @@ import Landing from "@/assets/LaDionisia/Landing.png";
 import NewsLetter from "@/assets/LaDionisia/NewsLetter.png";
 import Products from "@/assets/LaDionisia/Products.png";
 import Products01 from "@/assets/LaDionisia/Products01.png";
-import InProgress from "@/assets/InProgress.png";
 import DDHome from "@/assets/DigitalDreams/Home.png";
 import DDDetail from "@/assets/DigitalDreams/Detail.png";
 import DDLogin from "@/assets/DigitalDreams/Login.png";

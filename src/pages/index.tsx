@@ -68,7 +68,7 @@ export default function App({
         <title>Junior Huanca</title>
         <meta
           name="description"
-          content="Soy un desarrollador web full-stack con experiencia en el desarrollo de aplicaciones utilizando React y Next.js. Mi enfoque se centra en construir soluciones web escalables y modernas, aprovechando mis habilidades tanto en el desarrollo frontend como en el backend."
+          content="Soy un desarrollador web full-stack con experiencia en React y Next.js. Construyo soluciones web escalables y modernas, abarcando frontend y backend."
         />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/github.png" />
