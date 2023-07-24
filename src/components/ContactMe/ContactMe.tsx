@@ -47,7 +47,7 @@ const ContactMe = ({ setSelectedPage, contactme }: Props) => {
       subject: string;
       message: string;
     },
-    { resetForm }: { resetForm: any }
+    { resetForm }: { resetForm: () => void }
   ) {
     try {
       toast.promise(sendEmail({ ...values }), {
