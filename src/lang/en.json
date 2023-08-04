@@ -82,6 +82,11 @@
         }
       },
       {
+        "SmartEats": {
+          "description": "The project aims to showcase a collection of 100 food recipes, allowing users to filter and sort recipes according to their preferences. Additionally, it features a search bar to facilitate finding specific recipes. Furthermore, a controlled form has been implemented to enable users to add new recipes to the system securely and accurately. Redux is also utilized for state management, and pagination has been implemented. In summary, the project aims to provide a convenient online culinary experience for food enthusiasts."
+        }
+      },
+      {
         "DigitalDreams": {
           "description": "It is an e-commerce website for technology and computer-related products. The goal is to provide a convenient platform for purchasing quality products online. It will include advanced search filters, third-party authentication, and a secure payment gateway. Customers will be able to explore categories, compare products, read reviews, and make secure purchases. Third-party authentication will be provided to facilitate registration and access. In summary, we aim to provide a convenient and secure online shopping experience for technology enthusiasts."
         }

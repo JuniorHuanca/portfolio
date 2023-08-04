@@ -14,6 +14,12 @@ import DDProducts from "@/assets/DigitalDreams/Products.png";
 import DDProfile from "@/assets/DigitalDreams/Profile.png";
 import DDReviews from "@/assets/DigitalDreams/Reviews.png";
 import DDDashboard from "@/assets/DigitalDreams/Dashboard.png";
+import SEAbout from "@/assets/SmartEats/AboutMe.png";
+import SEDetail from "@/assets/SmartEats/Detail.png";
+import SEFeatures from "@/assets/SmartEats/Features.png";
+import SEHome from "@/assets/SmartEats/Home.png";
+import SENewRecipe from "@/assets/SmartEats/NewRecipe.png";
+import SERecipes from "@/assets/SmartEats/Recipes.png";
 import {
   SiNextdotjs,
   SiRedux,
@@ -60,6 +66,32 @@ export const projectsData = [
       SiPrisma,
       SiPhp,
       SiExpress,
+      BiLogoPostgresql,
+    ],
+  },
+  {
+    images: [
+      SEHome,
+      SEFeatures,
+      SERecipes,
+      SEDetail,
+      SENewRecipe,
+      SEAbout,
+    ],
+    title: "SmartEats",
+    description:
+      "",
+    link: "https://smarteats.vercel.app",
+    repository: "https://github.com/JuniorHuanca/Foods",
+    tecnologies: [
+      SiNextdotjs,
+      FaReact,
+      SiRedux,
+      SiCss3,
+      SiTailwindcss,
+      SiTypescript,
+      SiNodedotjs,
+      SiPrisma,
       BiLogoPostgresql,
     ],
   },

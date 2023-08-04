@@ -82,6 +82,11 @@
         }
       },
       {
+        "SmartEats": {
+          "description": "El proyecto tiene como objetivo presentar una colección de 100 recetas de comidas, con la capacidad de que los usuarios puedan filtrar y ordenar las recetas según sus preferencias. Además, se incluye una barra de búsqueda para facilitar la búsqueda de recetas específicas. Asimismo, se ha implementado un formulario controlado para que los usuarios puedan agregar nuevas recetas al sistema de forma segura y precisa. También se utiliza Redux para la gestión de estados y se ha implementado la funcionalidad de paginación. En resumen, el proyecto busca brindar una experiencia culinaria en línea conveniente para los entusiastas de la cocina."
+        }
+      },
+      {
         "DigitalDreams": {
           "description": "Es un sitio web de comercio electrónico para tecnología e informática. El objetivo es ofrecer una plataforma conveniente para comprar productos de calidad en línea. Incluirá filtros de búsqueda avanzados, autenticación de terceros y una pasarela de pagos segura. Los clientes podrán explorar categorías, comparar productos, leer reseñas y comprar de manera segura. Se proporcionará autenticación de terceros para facilitar el registro y el acceso. En resumen, buscamos una experiencia de compra en línea conveniente y segura para los amantes de la tecnología."
         }
