@@ -46,6 +46,7 @@ const Project = ({ project, setPhotos, setIndex, data, buttons }: Props) => {
           <a
             href={project.link}
             target="_blank"
+            rel="noreferrer"
             className="flex justify-center items-center dark:bg-indigo-800 text-white bg-blue-950 border-2 dark:border-indigo-800 border-blue-900 rounded-xl p-2 gap-3 hover:scale-110 transition duration-500"
           >
             <span className="font-bold xs:text-lg">{buttons.watch}</span>
@@ -54,6 +55,7 @@ const Project = ({ project, setPhotos, setIndex, data, buttons }: Props) => {
           <a
             href={project.repository}
             target="_blank"
+            rel="noreferrer"
             className="flex justify-center items-center border-2 dark:border-indigo-800 border-blue-900 rounded-xl p-2 gap-3 hover:scale-110 transition duration-500"
           >
             <span className="font-bold xs:text-lg">{buttons.repository}</span>
