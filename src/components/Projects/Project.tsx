@@ -1,6 +1,5 @@
 import { IProject, IProjectData } from "@/shared/types";
 import Image, { StaticImageData } from "next/image";
-import Link from "next/link";
 import { BsGithub } from "react-icons/bs";
 import { BiLinkExternal } from "react-icons/bi";
 import { motion } from "framer-motion";
@@ -10,10 +9,8 @@ import {
   Autoplay,
   EffectCube,
   Pagination,
-  Navigation,
   EffectCreative,
 } from "swiper/modules";
-import Gallery from "../Gallery";
 import { motionDivProps } from "@/shared/config";
 
 type Props = {
@@ -46,20 +43,22 @@ const Project = ({ project, setPhotos, setIndex, data, buttons }: Props) => {
           </div>
         </div>
         <div className="flex flex-wrap gap-2 justify-around">
-          <Link
+          <a
             href={project.link}
+            target="_blank"
             className="flex justify-center items-center dark:bg-indigo-800 text-white bg-blue-950 border-2 dark:border-indigo-800 border-blue-900 rounded-xl p-2 gap-3 hover:scale-110 transition duration-500"
           >
             <span className="font-bold xs:text-lg">{buttons.watch}</span>
             <BiLinkExternal className="text-4xl" />
-          </Link>
-          <Link
+          </a>
+          <a
             href={project.repository}
+            target="_blank"
             className="flex justify-center items-center border-2 dark:border-indigo-800 border-blue-900 rounded-xl p-2 gap-3 hover:scale-110 transition duration-500"
           >
             <span className="font-bold xs:text-lg">{buttons.repository}</span>
             <BsGithub className="text-4xl" />
-          </Link>
+          </a>
         </div>
       </div>
       <div className="w-full md:w-[50%] flex flex-wrap justify-center gap-4 p-2 md:p-4">
@@ -127,7 +126,6 @@ const Project = ({ project, setPhotos, setIndex, data, buttons }: Props) => {
           ))}
         </Swiper>
       </div>
-      {/* <Gallery photos={project.images} /> */}
     </motion.div>
   );
 };
