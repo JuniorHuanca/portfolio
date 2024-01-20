@@ -31,11 +31,10 @@ import {
   SiPrisma,
   SiPhp,
   SiExpress,
+  SiSequelize,
 } from "react-icons/si";
 import { FaReact } from "react-icons/fa";
 import { BiLogoPostgresql } from "react-icons/bi";
-import { AiFillHtml5 } from "react-icons/ai";
-
 export const projectsData = [
   {
     images: [
@@ -63,24 +62,16 @@ export const projectsData = [
       SiJavascript,
       SiTypescript,
       SiNodedotjs,
-      SiPrisma,
+      SiSequelize,
       SiPhp,
       SiExpress,
       BiLogoPostgresql,
     ],
   },
   {
-    images: [
-      SEHome,
-      SEFeatures,
-      SERecipes,
-      SEDetail,
-      SENewRecipe,
-      SEAbout,
-    ],
+    images: [SEHome, SEFeatures, SERecipes, SEDetail, SENewRecipe, SEAbout],
     title: "SmartEats",
-    description:
-      "",
+    description: "",
     link: "https://smarteats.vercel.app",
     repository: "https://github.com/JuniorHuanca/Foods",
     tecnologies: [

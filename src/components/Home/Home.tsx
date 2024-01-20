@@ -63,7 +63,7 @@ const Home = ({ setSelectedPage, home }: Props) => {
             sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
           />
           <a
-            href="/Junior Huanca CV.pdf"
+            href="/Junior Huanca - Desarrollador Web.pdf"
             download
             target="_blank"
             className="absolute bottom-0"
