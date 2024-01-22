@@ -77,6 +77,11 @@
     },
     "data": [
       {
+        "Portafolio": {
+          "description": "This is the site you are currently viewing on screen, my personal portfolio where I will showcase my skills, experiences, and projects. Always aiming to follow a pleasant, responsive UI/UX design that remains true to my style."
+        }
+      },
+      {
         "LaDionisia": {
           "description": "An online wine shop with registration and access through email or Google account. Wide selection of wines that can be filtered and sorted. Secure payment with credit card or PayPal. Favorites feature for desired products. Users can save products to their favorites, while administrators have access to a panel for editing and managing products, as well as viewing statistics and registered users. Users can leave reviews and ratings, which can be reported and moderated by administrators."
         }

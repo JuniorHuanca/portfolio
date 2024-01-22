@@ -20,6 +20,10 @@ import SEFeatures from "@/assets/SmartEats/Features.png";
 import SEHome from "@/assets/SmartEats/Home.png";
 import SENewRecipe from "@/assets/SmartEats/NewRecipe.png";
 import SERecipes from "@/assets/SmartEats/Recipes.png";
+import PHomeDark from "@/assets/Portafolio/dark.png";
+import PHomeLight from "@/assets/Portafolio/light.png";
+import PHomeDarkContactame from "@/assets/Portafolio/darkContactame.png";
+import PHomeLightContactame from "@/assets/Portafolio/lightContactame.png";
 import {
   SiNextdotjs,
   SiRedux,
@@ -36,6 +40,15 @@ import {
 import { FaReact } from "react-icons/fa";
 import { BiLogoPostgresql } from "react-icons/bi";
 export const projectsData = [
+  {
+    images: [PHomeDark, PHomeLight, PHomeDarkContactame, PHomeLightContactame],
+    title: "Portafolio",
+    description:
+      "La Dionisia es una vinoteca online que ofrece registro y acceso con email o cuenta de Google, permitiendo a los usuarios explorar, filtrar y ordenar una amplia variedad de vinos. El pago se realiza con tarjeta de crédito o PayPal, y se envía un mensaje de confirmación por email. Los usuarios pueden guardar productos en favoritos, y los administradores tienen acceso a un panel para editar y gestionar productos, así como ver estadísticas y usuarios registrados. Los usuarios pueden dejar reseñas y puntuaciones, que pueden ser reportadas y moderadas por los administradores.",
+    link: "https://juniorhuanca.vercel.app",
+    repository: "https://github.com/JuniorHuanca/portfolio",
+    tecnologies: [SiNextdotjs, FaReact, SiTailwindcss, SiTypescript],
+  },
   {
     images: [
       LaDionisia,
