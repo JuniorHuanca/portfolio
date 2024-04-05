@@ -19,7 +19,7 @@ const TechSkills = ({ setSelectedPage, techskills }: Props) => {
     },
   };
   return (
-    <section id="techskills" className="mx-auto min-h-full w-5/6 py-20">
+    <section id="techskills" className="mx-auto min-h-full w-5/6 py-20 max-w-screen-2xl">
       <motion.div
         onViewportEnter={() => setSelectedPage(SelectedPage.TechSkills)}
       >

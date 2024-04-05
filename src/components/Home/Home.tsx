@@ -25,7 +25,7 @@ const Home = ({ setSelectedPage, home }: Props) => {
     whileTap: { scale: 0.8 },
   };
   return (
-    <section id="home" className="flex items-center md:min-h-screen">
+    <section id="home" className="flex items-center md:min-h-screen max-w-screen-2xl mx-auto">
       {/* IMAGE AND MAIN HEADER */}
       <motion.div
         className="mx-auto w-5/6 items-center justify-center flex-col sm:flex md:flex-row md:h-5/6"

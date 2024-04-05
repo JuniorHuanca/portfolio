@@ -19,7 +19,7 @@ function SoftSkills({ setSelectedPage, softskills }: Props) {
     },
   };
   return (
-    <section id="softskills" className="mx-auto min-h-full w-5/6 py-20">
+    <section id="softskills" className="mx-auto min-h-full w-5/6 py-20 max-w-screen-2xl">
       <motion.div
         onViewportEnter={() => setSelectedPage(SelectedPage.SoftSkills)}
       >

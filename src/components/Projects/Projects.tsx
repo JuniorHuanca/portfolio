@@ -18,7 +18,7 @@ const Projects = ({ setSelectedPage, projects }: Props) => {
   const [index, setIndex] = useState<number>(1);
 
   return (
-    <section id="projects" className="mx-auto min-h-full w-5/6 py-20">
+    <section id="projects" className="mx-auto min-h-full w-5/6 py-20 max-w-screen-2xl">
       <motion.div
         onViewportEnter={() => setSelectedPage(SelectedPage.Projects)}
       >
@@ -51,9 +51,7 @@ const Projects = ({ setSelectedPage, projects }: Props) => {
                 buttons={projects.buttons}
               />
             ))}
-            {photos && (
-              <Gallery photos={photos} index={index} setPhotos={setPhotos} />
-            )}
+            {photos && <Gallery photos={photos} />}
           </div>
         </motion.div>
       </motion.div>

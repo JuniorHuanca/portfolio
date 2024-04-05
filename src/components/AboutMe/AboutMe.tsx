@@ -11,7 +11,7 @@ type Props = {
 
 const AboutMe = ({ setSelectedPage, aboutme }: Props) => {
   return (
-    <section id="aboutme" className="mx-auto min-h-full w-5/6 py-20">
+    <section id="aboutme" className="mx-auto min-h-full w-5/6 py-20 max-w-screen-2xl">
       <motion.div onViewportEnter={() => setSelectedPage(SelectedPage.AboutMe)}>
         <div className="mt-16 items-center justify-between gap-10 md:flex">
           <div className="relative w-full md:w-[70%] mb-10 md:m-0">
