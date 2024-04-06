@@ -82,8 +82,8 @@
         }
       },
       {
-        "LaDionisia": {
-          "description": "Vinoteca online con registro y acceso mediante email o cuenta de Google. Amplia selección de vinos filtrables y ordenables. Pago seguro con tarjeta de crédito o PayPal. Favoritos para productos deseados. Los usuarios pueden guardar productos en favoritos, y los administradores tienen acceso a un panel para editar y gestionar productos, así como ver estadísticas y usuarios registrados. Los usuarios pueden dejar reseñas y puntuaciones, que pueden ser reportadas y moderadas por los administradores."
+        "Clothes": {
+          "description": "Este proyecto busca crear un sitio web de comercio electrónico de moda y ropa, ofreciendo productos de alta calidad con una plataforma segura y fácil de usar. Los clientes podrán explorar, buscar y comprar de manera conveniente, con características avanzadas como filtros de búsqueda y autenticación de terceros. El objetivo es proporcionar una experiencia de compra satisfactoria y segura para los amantes de la moda y la ropa."
         }
       },
       {
@@ -94,6 +94,11 @@
       {
         "DigitalDreams": {
           "description": "Es un sitio web de comercio electrónico para tecnología e informática. El objetivo es ofrecer una plataforma conveniente para comprar productos de calidad en línea. Incluirá filtros de búsqueda avanzados, autenticación de terceros y una pasarela de pagos segura. Los clientes podrán explorar categorías, comparar productos, leer reseñas y comprar de manera segura. Se proporcionará autenticación de terceros para facilitar el registro y el acceso. En resumen, buscamos una experiencia de compra en línea conveniente y segura para los amantes de la tecnología."
+        }
+      },
+      {
+        "LaDionisia": {
+          "description": "Vinoteca online con registro y acceso mediante email o cuenta de Google. Amplia selección de vinos filtrables y ordenables. Pago seguro con tarjeta de crédito o PayPal. Favoritos para productos deseados. Los usuarios pueden guardar productos en favoritos, y los administradores tienen acceso a un panel para editar y gestionar productos, así como ver estadísticas y usuarios registrados. Los usuarios pueden dejar reseñas y puntuaciones, que pueden ser reportadas y moderadas por los administradores."
         }
       }
     ]

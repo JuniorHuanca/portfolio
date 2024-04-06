@@ -1,16 +1,16 @@
+import Persona from "@/assets/persona.webp";
 import { motionDivProps } from "@/shared/config";
-import * as Yup from "yup";
-import { useFormik } from "formik";
+import { sendEmail } from "@/shared/email";
 import { IContacme, SelectedPage } from "@/shared/types";
+import { useFormik } from "formik";
 import { motion } from "framer-motion";
 import Image from "next/image";
-import Subtitle from "../Subtitle";
-import Persona from "@/assets/persona.webp";
-import { sendEmail } from "@/shared/email";
-import { BsFillFilePersonFill, BsFileTextFill } from "react-icons/bs";
+import { BsFileTextFill, BsFillFilePersonFill } from "react-icons/bs";
 import { MdAlternateEmail, MdTitle } from "react-icons/md";
-import InputField from "../InputField";
 import { toast } from "sonner";
+import * as Yup from "yup";
+import InputField from "../InputField";
+import Subtitle from "../Subtitle";
 
 type Props = {
   setSelectedPage: (value: SelectedPage) => void;

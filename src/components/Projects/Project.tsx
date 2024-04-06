@@ -9,12 +9,11 @@ import Gallery from "../Gallery";
 type Props = {
   project: IProject;
   setPhotos: (value: StaticImageData[] | null) => void;
-  setIndex: (value: number) => void;
   data: IProjectData;
   buttons: { [key: string]: string };
 };
 
-const Project = ({ project, setPhotos, setIndex, data, buttons }: Props) => {
+const Project = ({ project, setPhotos, data, buttons }: Props) => {
   return (
     <motion.div
       className="w-full max-w-screen-2xl grid grid-cols-1 md:grid-cols-2 items-center shadow-lg shadow-indigo-500 bg-indigo-500/20 rounded-md overflow-hidden drop-shadow-2xl md:odd:flex-row md:even:flex-row-reverse"

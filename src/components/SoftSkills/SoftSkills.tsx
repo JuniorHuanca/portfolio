@@ -1,9 +1,8 @@
+import { motionDivProps } from "@/shared/config";
 import { ISoftskills, SelectedPage } from "@/shared/types";
 import { motion } from "framer-motion";
 import Subtitle from "../Subtitle";
-import { softskills as dsd } from "@/shared/data/Skills";
 import SoftSkill from "./SoftSkill";
-import { motionDivProps } from "@/shared/config";
 type Props = {
   setSelectedPage: (value: SelectedPage) => void;
   softskills: ISoftskills;

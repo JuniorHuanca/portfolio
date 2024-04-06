@@ -1,3 +1,5 @@
+import { StaticImageData } from "next/image";
+
 export const motionDivProps = {
   initial: "hidden",
   whileInView: "visible",
@@ -7,3 +9,14 @@ export const motionDivProps = {
     visible: { opacity: 1, x: 0 },
   },
 };
+
+export function importarImagenes(
+  carpeta: string,
+  imagenes: string[]
+): StaticImageData[] {
+  const imports: StaticImageData[] = [];
+  for (const imagen of imagenes) {
+    imports.push(require(`@/assets/${carpeta}/${imagen}.png`));
+  }
+  return imports;
+}

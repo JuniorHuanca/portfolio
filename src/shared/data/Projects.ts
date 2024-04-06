@@ -1,88 +1,81 @@
-import LaDionisia from "@/assets/LaDionisia/LaDionisia.png";
-import Accessibility from "@/assets/LaDionisia/Accessibility.png";
-import Cart from "@/assets/LaDionisia/Cart.png";
-import Checkout from "@/assets/LaDionisia/Checkout.png";
-import Detail from "@/assets/LaDionisia/Detail.png";
-import Landing from "@/assets/LaDionisia/Landing.png";
-import NewsLetter from "@/assets/LaDionisia/NewsLetter.png";
-import Products from "@/assets/LaDionisia/Products.png";
-import Products01 from "@/assets/LaDionisia/Products01.png";
-import DDHome from "@/assets/DigitalDreams/Home.png";
-import DDDetail from "@/assets/DigitalDreams/Detail.png";
-import DDLogin from "@/assets/DigitalDreams/Login.png";
-import DDProducts from "@/assets/DigitalDreams/Products.png";
-import DDProfile from "@/assets/DigitalDreams/Profile.png";
-import DDReviews from "@/assets/DigitalDreams/Reviews.png";
-import DDDashboard from "@/assets/DigitalDreams/Dashboard.png";
-import SEAbout from "@/assets/SmartEats/AboutMe.png";
-import SEDetail from "@/assets/SmartEats/Detail.png";
-import SEFeatures from "@/assets/SmartEats/Features.png";
-import SEHome from "@/assets/SmartEats/Home.png";
-import SENewRecipe from "@/assets/SmartEats/NewRecipe.png";
-import SERecipes from "@/assets/SmartEats/Recipes.png";
-import PHomeDark from "@/assets/Portafolio/dark.png";
-import PHomeLight from "@/assets/Portafolio/light.png";
-import PHomeDarkContactame from "@/assets/Portafolio/darkContactame.png";
-import PHomeLightContactame from "@/assets/Portafolio/lightContactame.png";
-import {
-  SiNextdotjs,
-  SiRedux,
-  SiCss3,
-  SiTailwindcss,
-  SiJavascript,
-  SiTypescript,
-  SiNodedotjs,
-  SiPrisma,
-  SiPhp,
-  SiExpress,
-  SiSequelize,
-} from "react-icons/si";
-import { FaReact } from "react-icons/fa";
 import { BiLogoPostgresql } from "react-icons/bi";
+import { FaReact } from "react-icons/fa";
+import {
+  SiCss3,
+  SiExpress,
+  SiJavascript,
+  SiNextdotjs,
+  SiNodedotjs,
+  SiPhp,
+  SiPrisma,
+  SiRedux,
+  SiSequelize,
+  SiTailwindcss,
+  SiTypescript,
+} from "react-icons/si";
+import { importarImagenes } from "../config";
+
+const LaDionisia = importarImagenes("LaDionisia", [
+  "LaDionisia",
+  "Accessibility",
+  "Cart",
+  "Checkout",
+  "Detail",
+  "Landing",
+  "NewsLetter",
+  "Products",
+  "Products01",
+]);
+const DigitalDreams = importarImagenes("DigitalDreams", [
+  "Home",
+  "Detail",
+  "Login",
+  "Products",
+  "Profile",
+  "Reviews",
+  "Dashboard",
+]);
+const SmartEats = importarImagenes("SmartEats", [
+  "Home",
+  "Features",
+  "Recipes",
+  "Detail",
+  "NewRecipe",
+  "AboutMe",
+]);
+const Portafolio = importarImagenes("Portafolio", [
+  "dark",
+  "darkContactame",
+  "light",
+  "lightContactame",
+]);
+const Clothes = importarImagenes("Clothes", ["Home", "Products"]);
+
 export const projectsData = [
   {
-    images: [PHomeDark, PHomeLight, PHomeDarkContactame, PHomeLightContactame],
+    images: Portafolio,
     title: "Portafolio",
-    description:
-      "La Dionisia es una vinoteca online que ofrece registro y acceso con email o cuenta de Google, permitiendo a los usuarios explorar, filtrar y ordenar una amplia variedad de vinos. El pago se realiza con tarjeta de crédito o PayPal, y se envía un mensaje de confirmación por email. Los usuarios pueden guardar productos en favoritos, y los administradores tienen acceso a un panel para editar y gestionar productos, así como ver estadísticas y usuarios registrados. Los usuarios pueden dejar reseñas y puntuaciones, que pueden ser reportadas y moderadas por los administradores.",
+    description: "",
     link: "https://juniorhuanca.vercel.app",
     repository: "https://github.com/JuniorHuanca/portfolio",
-    tecnologies: [SiNextdotjs, FaReact, SiTailwindcss, SiTypescript],
+    tecnologies: [SiNextdotjs, SiTailwindcss, SiTypescript],
   },
   {
-    images: [
-      LaDionisia,
-      Accessibility,
-      Cart,
-      Checkout,
-      Detail,
-      Landing,
-      NewsLetter,
-      Products,
-      Products01,
-    ],
-    title: "LaDionisia",
-    description:
-      "La Dionisia es una vinoteca online que ofrece registro y acceso con email o cuenta de Google, permitiendo a los usuarios explorar, filtrar y ordenar una amplia variedad de vinos. El pago se realiza con tarjeta de crédito o PayPal, y se envía un mensaje de confirmación por email. Los usuarios pueden guardar productos en favoritos, y los administradores tienen acceso a un panel para editar y gestionar productos, así como ver estadísticas y usuarios registrados. Los usuarios pueden dejar reseñas y puntuaciones, que pueden ser reportadas y moderadas por los administradores.",
-    link: "https://la-dionisia-front.vercel.app",
-    repository: "https://github.com/laura-e24/LaDionisiaFront",
+    images: Clothes,
+    title: "Clothes",
+    description: "",
+    link: "https://clothesjh.vercel.app",
+    repository: "https://github.com/JuniorHuanca/Clothes",
     tecnologies: [
       SiNextdotjs,
-      FaReact,
-      SiRedux,
-      SiCss3,
       SiTailwindcss,
-      SiJavascript,
       SiTypescript,
-      SiNodedotjs,
-      SiSequelize,
-      SiPhp,
-      SiExpress,
       BiLogoPostgresql,
+      SiPrisma,
     ],
   },
   {
-    images: [SEHome, SEFeatures, SERecipes, SEDetail, SENewRecipe, SEAbout],
+    images: SmartEats,
     title: "SmartEats",
     description: "",
     link: "https://smarteats.vercel.app",
@@ -100,18 +93,9 @@ export const projectsData = [
     ],
   },
   {
-    images: [
-      DDHome,
-      DDDetail,
-      DDLogin,
-      DDProducts,
-      DDProfile,
-      DDReviews,
-      DDDashboard,
-    ],
+    images: DigitalDreams,
     title: "DigitalDreams",
-    description:
-      "Un e-commerce electrónico que ofrece una variedad de productos relacionados con la tecnología y la informática. Creado con tecnologias como, NextJs, React, Redux, Prisma, PostgreSQL, NodeJs, Tailwind y otros.",
+    description: "",
     link: "https://digitaldreams.vercel.app",
     repository: "https://github.com/JuniorHuanca/DigitalDreams",
     tecnologies: [
@@ -123,6 +107,27 @@ export const projectsData = [
       SiTypescript,
       SiNodedotjs,
       SiPrisma,
+      BiLogoPostgresql,
+    ],
+  },
+  {
+    images: LaDionisia,
+    title: "LaDionisia",
+    description: "",
+    link: "https://la-dionisia-front.vercel.app",
+    repository: "https://github.com/laura-e24/LaDionisiaFront",
+    tecnologies: [
+      SiNextdotjs,
+      FaReact,
+      SiRedux,
+      SiCss3,
+      SiTailwindcss,
+      SiJavascript,
+      SiTypescript,
+      SiNodedotjs,
+      SiSequelize,
+      SiPhp,
+      SiExpress,
       BiLogoPostgresql,
     ],
   },

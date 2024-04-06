@@ -1,9 +1,9 @@
+import { motionDivProps } from "@/shared/config";
+import { technologies } from "@/shared/data/Technologies";
 import { ITechskills, SelectedPage } from "@/shared/types";
 import { motion } from "framer-motion";
 import Subtitle from "../Subtitle";
-import { technologies } from "@/shared/data/Technologies";
 import TechSkill from "./TechSkill";
-import { motionDivProps } from "@/shared/config";
 type Props = {
   setSelectedPage: (value: SelectedPage) => void;
   techskills: ITechskills;

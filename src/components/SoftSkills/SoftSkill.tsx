@@ -1,7 +1,7 @@
-import Image, { StaticImageData } from "next/image";
 import defaultPhoto from "@/assets/96/github.png";
-import { motion } from "framer-motion";
 import { motionDivProps } from "@/shared/config";
+import { motion } from "framer-motion";
+import Image, { StaticImageData } from "next/image";
 import { useEffect, useState } from "react";
 
 type Props = {
@@ -20,7 +20,7 @@ const SoftSkill = ({ image, title, text }: Props) => {
       const response = await import(`@/assets/${image}.webp`);
       setPhoto(response.default);
     })();
-  }, []);
+  }, [image]);
   return (
     <motion.div
       className="w-full md:w-[30%] bg-indigo-900/20 p-4 flex flex-col items-center"

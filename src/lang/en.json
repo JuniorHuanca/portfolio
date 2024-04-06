@@ -82,8 +82,8 @@
         }
       },
       {
-        "LaDionisia": {
-          "description": "An online wine shop with registration and access through email or Google account. Wide selection of wines that can be filtered and sorted. Secure payment with credit card or PayPal. Favorites feature for desired products. Users can save products to their favorites, while administrators have access to a panel for editing and managing products, as well as viewing statistics and registered users. Users can leave reviews and ratings, which can be reported and moderated by administrators."
+        "Clothes": {
+          "description": "This project aims to create an e-commerce website specializing in fashion and clothing, offering high-quality products with a secure and user-friendly platform. Customers will be able to conveniently explore, search, and purchase items, with advanced features such as search filters and third-party authentication. The goal is to provide a satisfying and secure shopping experience for fashion and clothing enthusiasts."
         }
       },
       {
@@ -94,6 +94,11 @@
       {
         "DigitalDreams": {
           "description": "It is an e-commerce website for technology and computer-related products. The goal is to provide a convenient platform for purchasing quality products online. It will include advanced search filters, third-party authentication, and a secure payment gateway. Customers will be able to explore categories, compare products, read reviews, and make secure purchases. Third-party authentication will be provided to facilitate registration and access. In summary, we aim to provide a convenient and secure online shopping experience for technology enthusiasts."
+        }
+      },
+      {
+        "LaDionisia": {
+          "description": "An online wine shop with registration and access through email or Google account. Wide selection of wines that can be filtered and sorted. Secure payment with credit card or PayPal. Favorites feature for desired products. Users can save products to their favorites, while administrators have access to a panel for editing and managing products, as well as viewing statistics and registered users. Users can leave reviews and ratings, which can be reported and moderated by administrators."
         }
       }
     ]

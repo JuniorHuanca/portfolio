@@ -1,13 +1,12 @@
-import { motionDivProps } from "@/shared/config";
+import { projectsData } from "@/shared/data/Projects";
 import { IProject, IProjects, SelectedPage } from "@/shared/types";
 import { motion } from "framer-motion";
-import { useState } from "react";
-import Subtitle from "../Subtitle";
-import LineGradient from "../LineGradient/LineGradient";
-import { projectsData } from "@/shared/data/Projects";
-import Project from "./Project";
-import Gallery from "../Gallery";
 import { StaticImageData } from "next/image";
+import { useState } from "react";
+import Gallery from "../Gallery";
+import LineGradient from "../LineGradient/LineGradient";
+import Subtitle from "../Subtitle";
+import Project from "./Project";
 type Props = {
   setSelectedPage: (value: SelectedPage) => void;
   projects: IProjects;
@@ -15,7 +14,6 @@ type Props = {
 
 const Projects = ({ setSelectedPage, projects }: Props) => {
   const [photos, setPhotos] = useState<StaticImageData[] | null>(null);
-  const [index, setIndex] = useState<number>(1);
 
   return (
     <section id="projects" className="mx-auto min-h-full w-5/6 py-20 max-w-screen-2xl">
@@ -46,7 +44,6 @@ const Projects = ({ setSelectedPage, projects }: Props) => {
                 key={index}
                 project={project}
                 setPhotos={setPhotos}
-                setIndex={setIndex}
                 data={projects.data[index]}
                 buttons={projects.buttons}
               />

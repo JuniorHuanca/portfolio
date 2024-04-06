@@ -6,7 +6,7 @@ type Props = {
 };
 
 const Gallery = ({ photos }: Props) => {
-  const [current, setCurrent] = useState(1);
+  const [current, setCurrent] = useState(0);
 
   const previousSlide = () => {
     if (current === 0) setCurrent(photos.length - 1);
@@ -63,7 +63,9 @@ const Gallery = ({ photos }: Props) => {
               }}
               key={"circle" + i}
               className={`rounded-full w-4 h-4 cursor-pointer  ${
-                i == current ? "bg-white ring-inset ring-2 ring-black" : "bg-gray-500"
+                i == current
+                  ? "bg-white ring-inset ring-2 ring-black"
+                  : "bg-gray-500"
               }`}
             ></div>
           );
