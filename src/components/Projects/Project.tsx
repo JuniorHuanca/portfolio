@@ -1,22 +1,20 @@
 import { motionDivProps } from "@/shared/config";
 import { IProject, IProjectData } from "@/shared/types";
 import { motion } from "framer-motion";
-import { StaticImageData } from "next/image";
 import { BiLink } from "react-icons/bi";
 import { BsGithub } from "react-icons/bs";
 import Gallery from "../Gallery";
 
 type Props = {
   project: IProject;
-  setPhotos: (value: StaticImageData[] | null) => void;
   data: IProjectData;
   buttons: { [key: string]: string };
 };
 
-const Project = ({ project, setPhotos, data, buttons }: Props) => {
+const Project = ({ project, data, buttons }: Props) => {
   return (
     <motion.div
-      className="w-full max-w-screen-2xl grid grid-cols-1 md:grid-cols-2 items-center shadow-lg shadow-indigo-500 bg-indigo-500/20 rounded-md overflow-hidden drop-shadow-2xl md:odd:flex-row md:even:flex-row-reverse"
+      className="w-full max-w-screen-2xl grid grid-cols-1 md:grid-cols-2 shadow-lg shadow-indigo-500 bg-indigo-500/20 rounded-md overflow-hidden drop-shadow-2xl md:odd:flex-row md:even:flex-row-reverse"
       {...motionDivProps}
     >
       <div className="w-full flex flex-col justify-between p-4">
@@ -25,7 +23,7 @@ const Project = ({ project, setPhotos, data, buttons }: Props) => {
           <p className="text-lg xl:text-xl text-justify">
             {data[project.title].description}
           </p>
-          <div className="flex flex-wrap my-6 gap-2">
+          <div className="flex justify-center flex-wrap my-6 gap-2">
             {project.tecnologies.map((Icon, index) => (
               <Icon
                 key={index}
@@ -55,7 +53,7 @@ const Project = ({ project, setPhotos, data, buttons }: Props) => {
           </a>
         </div>
       </div>
-      <div className="w-full flex flex-wrap justify-center gap-4 p-2 md:p-4">
+      <div className="p-2 md:p-4">
         <Gallery photos={project.images} />
       </div>
     </motion.div>

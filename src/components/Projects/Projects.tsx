@@ -13,10 +13,11 @@ type Props = {
 };
 
 const Projects = ({ setSelectedPage, projects }: Props) => {
-  const [photos, setPhotos] = useState<StaticImageData[] | null>(null);
-
   return (
-    <section id="projects" className="mx-auto min-h-full w-5/6 py-20 max-w-screen-2xl">
+    <section
+      id="projects"
+      className="mx-auto min-h-full w-5/6 py-20 max-w-screen-2xl"
+    >
       <motion.div
         onViewportEnter={() => setSelectedPage(SelectedPage.Projects)}
       >
@@ -39,16 +40,14 @@ const Projects = ({ setSelectedPage, projects }: Props) => {
           </div>
           <p className="text-xl">{projects.description}</p>
           <div className="flex justify-center w-full gap-12 flex-wrap mt-6">
-            {projectsData.map((project: IProject, index) => (
+            {projectsData.slice(0, 3).map((project: IProject, index) => (
               <Project
                 key={index}
                 project={project}
-                setPhotos={setPhotos}
                 data={projects.data[index]}
                 buttons={projects.buttons}
               />
             ))}
-            {photos && <Gallery photos={photos} />}
           </div>
         </motion.div>
       </motion.div>
