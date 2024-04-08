@@ -1,0 +1,36 @@
+{
+  "title": "PROJECTS",
+  "more": "See more",
+  "description": "Welcome to my Projects section, where you can see my achievements and capabilities as a web developer. Each project includes a detailed description of the tasks I performed, as well as a link for you to view the final result. If you are interested in working with me on your next project, feel free to contact me.",
+  "buttons": {
+    "watch": "View Project",
+    "repository": "Repository"
+  },
+  "data": [
+    {
+      "Portafolio": {
+        "description": "This is the site you are currently viewing on screen, my personal portfolio where I will showcase my skills, experiences, and projects. Always aiming to follow a pleasant, responsive UI/UX design that remains true to my style."
+      }
+    },
+    {
+      "Clothes": {
+        "description": "This project aims to create an e-commerce website specializing in fashion and clothing, offering high-quality products with a secure and user-friendly platform. Customers will be able to conveniently explore, search, and purchase items, with advanced features such as search filters and third-party authentication. The goal is to provide a satisfying and secure shopping experience for fashion and clothing enthusiasts."
+      }
+    },
+    {
+      "SmartEats": {
+        "description": "The project aims to showcase a collection of 100 food recipes, allowing users to filter and sort recipes according to their preferences. Additionally, it features a search bar to facilitate finding specific recipes. Furthermore, a controlled form has been implemented to enable users to add new recipes to the system securely and accurately. Redux is also utilized for state management, and pagination has been implemented. In summary, the project aims to provide a convenient online culinary experience for food enthusiasts."
+      }
+    },
+    {
+      "DigitalDreams": {
+        "description": "It is an e-commerce website for technology and computer-related products. The goal is to provide a convenient platform for purchasing quality products online. It will include advanced search filters, third-party authentication, and a secure payment gateway. Customers will be able to explore categories, compare products, read reviews, and make secure purchases. Third-party authentication will be provided to facilitate registration and access. In summary, we aim to provide a convenient and secure online shopping experience for technology enthusiasts."
+      }
+    },
+    {
+      "LaDionisia": {
+        "description": "An online wine shop with registration and access through email or Google account. Wide selection of wines that can be filtered and sorted. Secure payment with credit card or PayPal. Favorites feature for desired products. Users can save products to their favorites, while administrators have access to a panel for editing and managing products, as well as viewing statistics and registered users. Users can leave reviews and ratings, which can be reported and moderated by administrators."
+      }
+    }
+  ]
+}

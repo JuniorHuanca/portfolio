@@ -35,6 +35,7 @@ export interface ITechskills {
 
 export interface IProjects {
   title: string;
+  more: string;
   description: string;
   data: IProjectData[];
   buttons: { [key: string]: string };

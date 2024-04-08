@@ -1,6 +1,12 @@
 import AboutMe from "@/components/AboutMe/AboutMe";
+import ContactMe from "@/components/ContactMe/ContactMe";
+import Footer from "@/components/Footer/Footer";
 import Home from "@/components/Home/Home";
+import LineGradient from "@/components/LineGradient/LineGradient";
 import Navbar from "@/components/Navbar/Navbar";
+import Projects from "@/components/Projects/Projects";
+import SoftSkills from "@/components/SoftSkills/SoftSkills";
+import TechSkills from "@/components/TechSkills/TechSkills";
 import {
   IAboutme,
   IContacme,
@@ -12,15 +18,9 @@ import {
   ITechskills,
   SelectedPage,
 } from "@/shared/types";
-import { useEffect, useState } from "react";
 import { motion, useScroll, useSpring } from "framer-motion";
 import Head from "next/head";
-import LineGradient from "@/components/LineGradient/LineGradient";
-import SoftSkills from "@/components/SoftSkills/SoftSkills";
-import Footer from "@/components/Footer/Footer";
-import TechSkills from "@/components/TechSkills/TechSkills";
-import Projects from "@/components/Projects/Projects";
-import ContactMe from "@/components/ContactMe/ContactMe";
+import { useEffect, useState } from "react";
 type Props = {
   home: IHome;
   navbar: INavbar;
@@ -102,7 +102,10 @@ export default function App({
 }
 
 export async function getStaticProps({ locale }: { locale: string }) {
-  const response = await import(`@/lang/${locale}.json`);
+  const [response, projects] = await Promise.all([
+    import(`@/lang/${locale}.json`),
+    import(`@/lang/${locale}/projects.json`),
+  ]);
   return {
     props: {
       navbar: { ...response.default.navbar, locale },
@@ -110,7 +113,10 @@ export async function getStaticProps({ locale }: { locale: string }) {
       aboutme: response.default.aboutme,
       softskills: response.default.softskills,
       techskills: response.default.techskills,
-      projects: response.default.projects,
+      projects: {
+        ...projects.default,
+        data: projects.default.data.slice(0, 3),
+      },
       contactme: response.default.contactme,
       footer: response.default.footer,
     },
