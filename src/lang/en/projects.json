@@ -4,12 +4,13 @@
   "description": "Welcome to my Projects section, where you can see my achievements and capabilities as a web developer. Each project includes a detailed description of the tasks I performed, as well as a link for you to view the final result. If you are interested in working with me on your next project, feel free to contact me.",
   "buttons": {
     "watch": "View Project",
-    "repository": "Repository"
+    "repository": "Repository",
+    "back": "Go back"
   },
   "data": [
     {
-      "Portafolio": {
-        "description": "This is the site you are currently viewing on screen, my personal portfolio where I will showcase my skills, experiences, and projects. Always aiming to follow a pleasant, responsive UI/UX design that remains true to my style."
+      "Portfolio": {
+        "description": "This is the site you are currently viewing on screen, my personal portfolio. Here, I share my passion for web design and digital creativity. Each project reflects my focus on attractive, intuitive, and responsive design. Explore and discover how I combine skills and experiences to create unique digital experiences."
       }
     },
     {

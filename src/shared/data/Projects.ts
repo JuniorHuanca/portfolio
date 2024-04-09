@@ -82,9 +82,7 @@ export const projectsData = [
     repository: "https://github.com/JuniorHuanca/Foods",
     tecnologies: [
       SiNextdotjs,
-      FaReact,
       SiRedux,
-      SiCss3,
       SiTailwindcss,
       SiTypescript,
       SiNodedotjs,
@@ -100,9 +98,7 @@ export const projectsData = [
     repository: "https://github.com/JuniorHuanca/DigitalDreams",
     tecnologies: [
       SiNextdotjs,
-      FaReact,
       SiRedux,
-      SiCss3,
       SiTailwindcss,
       SiTypescript,
       SiNodedotjs,

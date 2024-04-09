@@ -23,16 +23,16 @@ const Project = ({ project, data, buttons }: Props) => {
           <p className="text-lg xl:text-xl text-justify">
             {data[project.title].description}
           </p>
+        </div>
           <div className="flex justify-center flex-wrap my-6 gap-2">
             {project.tecnologies.map((Icon, index) => (
               <Icon
                 key={index}
-                className="text-4xl hover:scale-110 transition-all"
+                className="text-4xl xl:text-5xl hover:scale-125 transition-all"
               />
             ))}
           </div>
-        </div>
-        <div className="flex flex-wrap gap-2 justify-around">
+        {/* <div className="flex flex-wrap gap-2 justify-around">
           <a
             href={project.link}
             target="_blank"
@@ -51,9 +51,9 @@ const Project = ({ project, data, buttons }: Props) => {
             <span className="font-bold xs:text-lg">{buttons.repository}</span>
             <BsGithub className="text-4xl" />
           </a>
-        </div>
+        </div> */}
       </div>
-      <div className="p-2 md:p-4">
+      <div className="p-2 md:p-4 self-center">
         <Gallery photos={project.images} />
       </div>
     </motion.div>
