@@ -32,7 +32,7 @@ const ProjectsPage = ({ data }: Props) => {
 
 export default ProjectsPage;
 
-export async function getStaticProps({ locale }: { locale: string }) {
+export async function getServerSideProps({ locale }: { locale: string }) {
   const response = await import(`@/lang/${locale}/projects.json`);
   return {
     props: {

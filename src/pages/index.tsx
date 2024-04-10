@@ -101,7 +101,7 @@ export default function App({
   );
 }
 
-export async function getStaticProps({ locale }: { locale: string }) {
+export async function getServerSideProps({ locale }: { locale: string }) {
   const [response, projects] = await Promise.all([
     import(`@/lang/${locale}.json`),
     import(`@/lang/${locale}/projects.json`),
