@@ -11,7 +11,7 @@ function LenguageSelector({ languages, locale }: Props) {
   const router = useRouter();
   const handleChangeLang = (e: MouseEvent<HTMLButtonElement>) => {
     setDropdown(false);
-    router.push(router.pathname, router.pathname, {
+    router.push(router.asPath, router.asPath, {
       locale: e.currentTarget.name,
     });
   };

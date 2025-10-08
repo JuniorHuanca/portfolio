@@ -49,7 +49,14 @@ const Portafolio = importarImagenes("Portafolio", [
   "light",
   "lightContactame",
 ]);
-const Clothes = importarImagenes("Clothes", ["Home", "Products"]);
+const Clothes = importarImagenes("Clothes", [
+  "Home",
+  "Home2",
+  "Products",
+  "Detail",
+  "Cart",
+  "Checkout",
+]);
 
 export const projectsData = [
   {
@@ -66,13 +73,7 @@ export const projectsData = [
     description: "",
     link: "https://clothesjh.vercel.app",
     repository: "https://github.com/JuniorHuanca/Clothes",
-    tecnologies: [
-      SiNextdotjs,
-      SiTailwindcss,
-      SiTypescript,
-      BiLogoPostgresql,
-      SiPrisma,
-    ],
+    tecnologies: [SiNextdotjs, SiTailwindcss, SiTypescript, BiLogoPostgresql, SiPrisma],
   },
   {
     images: SmartEats,

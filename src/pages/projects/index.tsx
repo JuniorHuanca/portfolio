@@ -1,42 +1,57 @@
+import Layout from "@/components/Layout";
 import Projects from "@/components/Projects/Projects";
-import { IProjects, SelectedPage } from "@/shared/types";
-import Head from "next/head";
+import {
+  IFooter,
+  IMetaTags,
+  INavbar,
+  IProjects,
+  SelectedPage,
+} from "@/shared/types";
 import Link from "next/link";
 
 type Props = {
+  metaTags: IMetaTags;
   data: IProjects;
+  footer: IFooter;
+  navbar: INavbar;
 };
 
-const ProjectsPage = ({ data }: Props) => {
+const ProjectsPage = ({ metaTags, data, footer, navbar }: Props) => {
   return (
-    <div className="dark:bg-blue-950 text-blue-900 dark:text-white">
-      <Head>
-        <title>Projects</title>
-        <meta
-          name="description"
-          content="Soy un desarrollador web full-stack con experiencia en React y Next.js. Construyo soluciones web escalables y modernas, abarcando frontend y backend."
-        />
-        <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <link rel="icon" href="/github.png" />
-      </Head>
-      <Link
-        href="/"
-        className="block p-8 text-2xl underline underline-offset-4"
-      >
-        {data.buttons.back}
-      </Link>
+    // <div className="dark:bg-blue-950 text-blue-900 dark:text-white">
+    //   <MetaTags title={metaTags.title} description={metaTags.description} />
+    //   <Link
+    //     href="/"
+    //     className="block p-8 text-2xl underline underline-offset-4"
+    //   >
+    //     {data.buttons.back}
+    //   </Link>
+    //   <Projects projects={data} />
+    // </div>
+    <Layout
+      metaTags={metaTags}
+      footer={footer}
+      navbar={navbar}
+      initialSelectedPage={SelectedPage.Projects}
+    >
       <Projects projects={data} />
-    </div>
+    </Layout>
   );
 };
 
 export default ProjectsPage;
 
 export async function getServerSideProps({ locale }: { locale: string }) {
-  const response = await import(`@/lang/${locale}/projects.json`);
+  const [response, projects] = await Promise.all([
+    import(`@/lang/${locale}.json`),
+    import(`@/lang/${locale}/projects.json`),
+  ]);
   return {
     props: {
-      data: response.default,
+      metaTags: response.default.metaTags,
+      footer: response.default.footer,
+      navbar: response.default.navbar,
+      data: projects.default,
     },
   };
 }

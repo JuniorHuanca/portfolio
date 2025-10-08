@@ -1,9 +1,9 @@
-import Link from "next/link";
-import LenguageSelector from "../LenguageSelector";
 import { INavbar, SelectedPage } from "@/shared/types";
+import { useRouter } from "next/router";
 import { useEffect, useState } from "react";
-import AnchorLink from "react-anchor-link-smooth-scroll";
+import LenguageSelector from "../LenguageSelector";
 import ModeSelector from "../ModeSelector";
+import Link from "next/link";
 
 type Props = {
   isTopOfPage: boolean;
@@ -18,6 +18,7 @@ const Navbar = ({
   selectedPage,
   setSelectedPage,
 }: Props) => {
+  const router = useRouter();
   const [isMobileMenuOpen, setMobileMenuOpen] = useState(false);
   const [hasMounted, setHasMounted] = useState(false);
   const { links, mode, languages, locale } = navbar;
@@ -27,6 +28,15 @@ const Navbar = ({
   const navbarBackground = isTopOfPage
     ? "text-blue-900 dark:text-white"
     : "bg-blue-950 dark:bg-purple-800 text-white";
+
+  const scrollToSection = (id: string) => {
+    const el = document.getElementById(id);
+    if (el) {
+      el.scrollIntoView({ behavior: "smooth" });
+    } else {
+      router.push(`/#${id}`);
+    }
+  };
 
   useEffect(() => {
     setHasMounted(true);
@@ -41,9 +51,12 @@ const Navbar = ({
         <div className="flex items-center justify-between h-16">
           <div className="flex-1 flex justify-between items-center">
             <div className="flex-shrink-0">
-              <span className="text-4xl font-bold lg:text-5xl xl:text-5xl">
+              <Link
+                href="/"
+                className="text-4xl font-bold lg:text-5xl xl:text-5xl"
+              >
                 JH
-              </span>
+              </Link>
             </div>
             <div className="hidden lg:block">
               <div className="flex items-center">
@@ -52,8 +65,7 @@ const Navbar = ({
                     .toLowerCase()
                     .replace(/ /g, "") as SelectedPage;
                   return (
-                    <AnchorLink
-                      href={`#${lowerCasePage}`}
+                    <button
                       key={index}
                       className={`${
                         selectedPage === lowerCasePage
@@ -61,11 +73,13 @@ const Navbar = ({
                           : ""
                       } px-3 py-2 transition duration-500 hover:text-blue-500 dark:hover:text-light-blue-400 text-lg font-bold`}
                       onClick={() => {
+                        scrollToSection(lowerCasePage);
                         setSelectedPage(lowerCasePage);
+                        setMobileMenuOpen(false);
                       }}
                     >
                       {links[key]}
-                    </AnchorLink>
+                    </button>
                   );
                 })}
               </div>
@@ -130,8 +144,7 @@ const Navbar = ({
               .toLowerCase()
               .replace(/ /g, "") as SelectedPage;
             return (
-              <AnchorLink
-                href={`#${lowerCasePage}`}
+              <button
                 key={index}
                 className={`${
                   selectedPage === lowerCasePage
@@ -139,11 +152,13 @@ const Navbar = ({
                     : ""
                 } block px-3 py-2 rounded-md text-lg font-bold transition duration-500 hover:text-blue-500 dark:hover:text-blue-500`}
                 onClick={() => {
+                  scrollToSection(lowerCasePage);
                   setSelectedPage(lowerCasePage);
+                  setMobileMenuOpen(false);
                 }}
               >
                 {links[key]}
-              </AnchorLink>
+              </button>
             );
           })}
         </div>

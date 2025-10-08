@@ -1,4 +1,8 @@
 {
+  "metaTags": {
+    "title": "Junior Huanca",
+    "description": "Soy un desarrollador web full-stack con experiencia en React y Next.js. Construyo soluciones web escalables y modernas, abarcando frontend y backend."
+  },
   "navbar": {
     "links": {
       "home": "Inicio",
