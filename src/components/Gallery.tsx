@@ -1,73 +1,77 @@
-import { useState } from "react";
-import { Swiper, SwiperSlide } from "swiper/react";
-import { FreeMode, Navigation, Thumbs } from "swiper/modules";
 import Image, { StaticImageData } from "next/image";
-import { type Swiper as SwiperRef } from "swiper";
+import { useState } from "react";
+import { BiChevronLeft, BiChevronRight } from "react-icons/bi";
 type Props = {
   photos: StaticImageData[];
-  index: number;
-  setPhotos: (value: StaticImageData[] | null) => void;
 };
 
-const Gallery = ({ photos, index, setPhotos }: Props) => {
-  const [thumbsSwiper, setThumbsSwiper] = useState<SwiperRef>();
+const Gallery = ({ photos }: Props) => {
+  const [current, setCurrent] = useState(0);
+
+  const previousSlide = () => {
+    if (current === 0) setCurrent(photos.length - 1);
+    else setCurrent(current - 1);
+  };
+
+  const nextSlide = () => {
+    if (current === photos.length - 1) setCurrent(0);
+    else setCurrent(current + 1);
+  };
   return (
-    <>
-      <div className="flex justify-center items-center fixed top-0 right-0 w-screen h-screen bg-black/70 dark:bg-black/20 z-10">
-        <div className="relative w-full xs:w-[85%] h-auto sm:h-[90%] bg-black xs:p-2 py-1 gap-1 xs:gap-2 rounded-lg">
-          <Swiper
-            loop={true}
-            spaceBetween={10}
-            navigation={true}
-            thumbs={{ swiper: thumbsSwiper }}
-            modules={[FreeMode, Navigation, Thumbs]}
-            className="mySwiper2"
-            initialSlide={index}
-          >
-            {photos.map((photo, index) => (
-              <SwiperSlide key={index}>
-                <Image src={photo} alt={"Error"} loading="lazy" />
-              </SwiperSlide>
-            ))}
-          </Swiper>
-          <Swiper
-            onSwiper={setThumbsSwiper}
-            loop={true}
-            spaceBetween={10}
-            slidesPerView={4}
-            freeMode={true}
-            watchSlidesProgress={true}
-            modules={[FreeMode, Navigation, Thumbs]}
-            className="mySwiper"
-          >
-            {photos.map((photo, index) => (
-              <SwiperSlide key={index}>
-                <Image src={photo} alt={"Error"} loading="lazy" />
-              </SwiperSlide>
-            ))}
-          </Swiper>
-          <button
-            type="button"
-            className="absolute top-2 right-2 bg-blue-950 inline-flex items-center justify-center p-2 hover:text-gray-400 text-white hover:bg-blue-900 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-black focus:ring-white z-50"
-            onClick={() => setPhotos(null)}
-          >
-            <svg
-              className={`h-6 w-6`}
-              stroke="currentColor"
-              fill="none"
-              viewBox="0 0 24 24"
-            >
-              <path
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                strokeWidth="2"
-                d="M6 18L18 6M6 6l12 12"
-              />
-            </svg>
-          </button>
-        </div>
+    <div className="overflow-hidden relative">
+      <div
+        className={`flex transition ease-out duration-40`}
+        style={{
+          transform: `translateX(-${current * 100}%)`,
+        }}
+      >
+        {photos.map((s, index) => {
+          return (
+            <Image
+              src={s}
+              alt={`img${index}`}
+              key={index}
+              className="aspect-video object-scale-down"
+            />
+          );
+        })}
       </div>
-    </>
+
+      <div className="absolute top-0 h-full w-full justify-between items-center flex text-white px-4 text-3xl">
+        <button
+          className="bg-black/30 rounded-full p-1"
+          onClick={previousSlide}
+          type="button"
+        >
+          <BiChevronLeft />
+        </button>
+        <button
+          className="bg-black/30 rounded-full p-1"
+          onClick={nextSlide}
+          type="button"
+        >
+          <BiChevronRight />
+        </button>
+      </div>
+
+      <div className="absolute bottom-0 py-4 flex justify-center gap-3 w-full">
+        {photos.map((_, i) => {
+          return (
+            <div
+              onClick={() => {
+                setCurrent(i);
+              }}
+              key={"circle" + i}
+              className={`rounded-full w-4 h-4 cursor-pointer  ${
+                i == current
+                  ? "bg-white ring-inset ring-2 ring-black"
+                  : "bg-gray-500"
+              }`}
+            ></div>
+          );
+        })}
+      </div>
+    </div>
   );
 };
 

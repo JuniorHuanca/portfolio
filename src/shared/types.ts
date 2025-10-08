@@ -10,6 +10,11 @@ export enum SelectedPage {
   ContactMe = "contactme",
 }
 
+export interface IMetaTags {
+  title: string;
+  description: string;
+}
+
 export interface IHome {
   career: string;
   introduction: string;
@@ -35,6 +40,7 @@ export interface ITechskills {
 
 export interface IProjects {
   title: string;
+  more: string;
   description: string;
   data: IProjectData[];
   buttons: { [key: string]: string };

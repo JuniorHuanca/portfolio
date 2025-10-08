@@ -1,0 +1,37 @@
+{
+  "title": "PROYECTOS",
+  "more": "Ver más",
+  "description": "Bienvenido a mi sección de Proyectos, donde podrás ver mis logros y capacidades como desarrollador web. Cada proyecto incluye una descripción detallada de las tareas que realicé, así como un enlace para que puedas ver el resultado final. Si estás interesado en trabajar conmigo en tu próximo proyecto, no dudes en contactarme.",
+  "buttons": {
+    "watch": "Ver proyecto",
+    "repository": "Repositorio",
+    "back": "Regresar"
+  },
+  "data": [
+    {
+      "Portafolio": {
+        "description": "Este es el sitio que estás viendo en pantalla, mi portafolio personal. Aquí comparto mi pasión por el diseño web y la creatividad digital. Cada proyecto refleja mi enfoque en un diseño atractivo, intuitivo y responsive. Explora y descubre cómo combino habilidades y experiencias para crear experiencias digitales únicas."
+      }
+    },
+    {
+      "Clothes": {
+        "description": "Este proyecto busca crear un sitio web de comercio electrónico de moda y ropa, ofreciendo productos de alta calidad con una plataforma segura y fácil de usar. Los clientes podrán explorar, buscar y comprar de manera conveniente, con características avanzadas como filtros de búsqueda y autenticación de terceros. El objetivo es proporcionar una experiencia de compra satisfactoria y segura para los amantes de la moda y la ropa."
+      }
+    },
+    {
+      "SmartEats": {
+        "description": "El proyecto tiene como objetivo presentar una colección de 100 recetas de comidas, con la capacidad de que los usuarios puedan filtrar y ordenar las recetas según sus preferencias. Además, se incluye una barra de búsqueda para facilitar la búsqueda de recetas específicas. Asimismo, se ha implementado un formulario controlado para que los usuarios puedan agregar nuevas recetas al sistema de forma segura y precisa. También se utiliza Redux para la gestión de estados y se ha implementado la funcionalidad de paginación. En resumen, el proyecto busca brindar una experiencia culinaria en línea conveniente para los entusiastas de la cocina."
+      }
+    },
+    {
+      "DigitalDreams": {
+        "description": "Es un sitio web de comercio electrónico para tecnología e informática. El objetivo es ofrecer una plataforma conveniente para comprar productos de calidad en línea. Incluirá filtros de búsqueda avanzados, autenticación de terceros y una pasarela de pagos segura. Los clientes podrán explorar categorías, comparar productos, leer reseñas y comprar de manera segura. Se proporcionará autenticación de terceros para facilitar el registro y el acceso. En resumen, buscamos una experiencia de compra en línea conveniente y segura para los amantes de la tecnología."
+      }
+    },
+    {
+      "LaDionisia": {
+        "description": "Vinoteca online con registro y acceso mediante email o cuenta de Google. Amplia selección de vinos filtrables y ordenables. Pago seguro con tarjeta de crédito o PayPal. Favoritos para productos deseados. Los usuarios pueden guardar productos en favoritos, y los administradores tienen acceso a un panel para editar y gestionar productos, así como ver estadísticas y usuarios registrados. Los usuarios pueden dejar reseñas y puntuaciones, que pueden ser reportadas y moderadas por los administradores."
+      }
+    }
+  ]
+}

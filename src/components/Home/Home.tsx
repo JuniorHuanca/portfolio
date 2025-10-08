@@ -1,11 +1,11 @@
+import Person from "@/assets/me.webp";
+import { motionDivProps } from "@/shared/config";
 import { IHome, SelectedPage } from "@/shared/types";
 import { motion } from "framer-motion";
 import Image from "next/image";
-import Person from "@/assets/me.webp";
 import Link from "next/link";
 import AnchorLink from "react-anchor-link-smooth-scroll";
 import { BsGithub, BsLinkedin } from "react-icons/bs";
-import { motionDivProps } from "@/shared/config";
 
 type Props = {
   setSelectedPage: (value: SelectedPage) => void;
@@ -25,7 +25,7 @@ const Home = ({ setSelectedPage, home }: Props) => {
     whileTap: { scale: 0.8 },
   };
   return (
-    <section id="home" className="flex items-center md:min-h-screen">
+    <section id="home" className="flex items-center md:min-h-screen max-w-screen-2xl mx-auto">
       {/* IMAGE AND MAIN HEADER */}
       <motion.div
         className="mx-auto w-5/6 items-center justify-center flex-col sm:flex md:flex-row md:h-5/6"

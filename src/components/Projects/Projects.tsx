@@ -1,29 +1,28 @@
-import { motionDivProps } from "@/shared/config";
+import { projectsData } from "@/shared/data/Projects";
 import { IProject, IProjects, SelectedPage } from "@/shared/types";
 import { motion } from "framer-motion";
-import { useState } from "react";
-import Subtitle from "../Subtitle";
+import Link from "next/link";
 import LineGradient from "../LineGradient/LineGradient";
-import { projectsData } from "@/shared/data/Projects";
+import Subtitle from "../Subtitle";
 import Project from "./Project";
-import Gallery from "../Gallery";
-import { StaticImageData } from "next/image";
 type Props = {
-  setSelectedPage: (value: SelectedPage) => void;
   projects: IProjects;
+  setSelectedPage?: (value: SelectedPage) => void;
 };
 
 const Projects = ({ setSelectedPage, projects }: Props) => {
-  const [photos, setPhotos] = useState<StaticImageData[] | null>(null);
-  const [index, setIndex] = useState<number>(1);
-
   return (
-    <section id="projects" className="mx-auto min-h-full w-5/6 py-20">
+    <section
+      id="projects"
+      className="mx-auto min-h-full w-5/6 py-20 max-w-screen-2xl"
+    >
       <motion.div
-        onViewportEnter={() => setSelectedPage(SelectedPage.Projects)}
+        onViewportEnter={() =>
+          setSelectedPage && setSelectedPage(SelectedPage.Projects)
+        }
       >
         <motion.div
-          className="md:my-5 md:w-full"
+          className="md:my-6 md:w-full"
           initial="hidden"
           whileInView="visible"
           viewport={{ once: true, amount: "some" }}
@@ -41,22 +40,27 @@ const Projects = ({ setSelectedPage, projects }: Props) => {
           </div>
           <p className="text-xl">{projects.description}</p>
           <div className="flex justify-center w-full gap-12 flex-wrap mt-6">
-            {projectsData.map((project: IProject, index) => (
-              <Project
-                key={index}
-                project={project}
-                setPhotos={setPhotos}
-                setIndex={setIndex}
-                data={projects.data[index]}
-                buttons={projects.buttons}
-              />
-            ))}
-            {photos && (
-              <Gallery photos={photos} index={index} setPhotos={setPhotos} />
-            )}
+            {projectsData
+              .slice(0, projects.data.length)
+              .map((project: IProject, index) => (
+                <Project
+                  key={index}
+                  project={project}
+                  data={projects.data[index]}
+                  buttons={projects.buttons}
+                />
+              ))}
           </div>
         </motion.div>
       </motion.div>
+      {setSelectedPage && (
+        <Link
+          className="mx-auto block w-max text-xl rounded-md bg-indigo-900/50 px-10 py-2 hover:bg-indigo-900/70 hover:text-white font-bold"
+          href={`/projects`}
+        >
+          {projects.more}
+        </Link>
+      )}
     </section>
   );
 };

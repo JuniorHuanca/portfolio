@@ -1,9 +1,8 @@
+import { motionDivProps } from "@/shared/config";
 import { ISoftskills, SelectedPage } from "@/shared/types";
 import { motion } from "framer-motion";
 import Subtitle from "../Subtitle";
-import { softskills as dsd } from "@/shared/data/Skills";
 import SoftSkill from "./SoftSkill";
-import { motionDivProps } from "@/shared/config";
 type Props = {
   setSelectedPage: (value: SelectedPage) => void;
   softskills: ISoftskills;
@@ -19,7 +18,7 @@ function SoftSkills({ setSelectedPage, softskills }: Props) {
     },
   };
   return (
-    <section id="softskills" className="mx-auto min-h-full w-5/6 py-20">
+    <section id="softskills" className="mx-auto min-h-full w-5/6 py-20 max-w-screen-2xl">
       <motion.div
         onViewportEnter={() => setSelectedPage(SelectedPage.SoftSkills)}
       >

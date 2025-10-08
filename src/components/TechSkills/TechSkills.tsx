@@ -1,9 +1,9 @@
+import { motionDivProps } from "@/shared/config";
+import { technologies } from "@/shared/data/Technologies";
 import { ITechskills, SelectedPage } from "@/shared/types";
 import { motion } from "framer-motion";
 import Subtitle from "../Subtitle";
-import { technologies } from "@/shared/data/Technologies";
 import TechSkill from "./TechSkill";
-import { motionDivProps } from "@/shared/config";
 type Props = {
   setSelectedPage: (value: SelectedPage) => void;
   techskills: ITechskills;
@@ -19,7 +19,7 @@ const TechSkills = ({ setSelectedPage, techskills }: Props) => {
     },
   };
   return (
-    <section id="techskills" className="mx-auto min-h-full w-5/6 py-20">
+    <section id="techskills" className="mx-auto min-h-full w-5/6 py-20 max-w-screen-2xl">
       <motion.div
         onViewportEnter={() => setSelectedPage(SelectedPage.TechSkills)}
       >
