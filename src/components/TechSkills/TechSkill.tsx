@@ -10,13 +10,13 @@ type Props = {
 const TechSkill = (props: Props) => {
   return (
     <motion.div
-      className="w-[40%] sm:w-[30%] md:w-[20%] bg-indigo-900/20 p-4 flex flex-col items-center"
+      className="w-2/5 sm:w-[30%] md:w-1/5 lg:w-1/6 bg-indigo-500/20 dark:bg-indigo-800 p-4 flex flex-col items-center rounded"
       {...motionDivProps}
     >
-      <div className="hover:animate-bell-swing-scale">
+      <div className="hover:animate-bell-swing-scale p-1 rounded-2xl bg-white">
         <Image src={props.image} alt={props.name} className="rounded-2xl" />
       </div>
-      <h3 className="font-playfair text-2xl font-bold">{props.name}</h3>
+      <h3 className="font-playfair md:text-2xl text-xl font-bold">{props.name}</h3>
     </motion.div>
   );
 };

@@ -26,7 +26,7 @@
     "career": "Full-Stack Web Developer",
     "introduction": "I am a full-stack web developer with experience in developing applications using React and Next.js. My focus revolves around building scalable and modern web solutions, leveraging my skills in both frontend and backend development.",
     "contactMe": "Contact Me",
-    "donwload": "Download CV"
+    "cv": "Explore My Experience"
   },
   "aboutme": {
     "title": "ABOUT ME",
@@ -85,7 +85,8 @@
       "subject": "Please enter the subject of the message.",
       "message": "Please enter the text of the message.",
       "minmessage": "The text must have at least 10 characters.",
-      "error": "Error, something went wrong."
+      "error": "Error, something went wrong.",
+      "minname": "The name must have at least 3 characters."
     },
     "status": {
       "loading": "Sending email...",

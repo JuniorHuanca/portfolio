@@ -1,10 +1,9 @@
 import { motionDivProps } from "@/shared/config";
 import { IProject, IProjectData } from "@/shared/types";
 import { motion } from "framer-motion";
-import { BiLink } from "react-icons/bi";
-import { BsGithub } from "react-icons/bs";
-import Gallery from "../Gallery";
 import Link from "next/link";
+import { FaExternalLinkAlt } from "react-icons/fa";
+import Gallery from "../Gallery";
 
 type Props = {
   project: IProject;
@@ -22,9 +21,9 @@ const Project = ({ project, data, buttons }: Props) => {
         <div>
           <Link
             href={`/projects/${project.title}`}
-            className="text-2xl xs:text-3xl font-bold"
+            className="text-2xl xs:text-3xl font-bold flex items-center gap-2 relative after:content-[''] after:absolute after:left-0 after:bottom-0 after:h-0.5 after:w-0 after:bg-gradient-rainblue after:transition-all after:duration-500 hover:after:w-full"
           >
-            {project.title}
+            {project.title} <FaExternalLinkAlt size={20} />
           </Link>
           <p className="text-lg xl:text-xl text-justify">
             {data[project.title].description}
@@ -59,12 +58,7 @@ const Project = ({ project, data, buttons }: Props) => {
           </a>
         </div> */}
       </div>
-      <Link
-        href={`/projects/${project.title}`}
-        className="p-2 md:p-4 self-center"
-      >
-        <Gallery photos={project.images} />
-      </Link>
+      <Gallery photos={project.images} />
     </motion.div>
   );
 };

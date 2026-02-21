@@ -9,7 +9,7 @@ import {
   SelectedPage,
 } from "@/shared/types";
 import { NextPageContext } from "next";
-import Link from "next/link";
+import { useRouter } from "next/navigation";
 import { BiLink } from "react-icons/bi";
 import { BsGithub } from "react-icons/bs";
 
@@ -22,6 +22,7 @@ type Props = {
 };
 
 const ProjectDetail = ({ metaTags, name, projects, navbar, footer }: Props) => {
+  const router = useRouter();
   const project = projectsData.find((p) => p.title === name);
   const index = projectsData.findIndex((p) => p.title === name);
   if (!project || !projects) return null;
@@ -34,12 +35,12 @@ const ProjectDetail = ({ metaTags, name, projects, navbar, footer }: Props) => {
       navbar={navbar}
       initialSelectedPage={SelectedPage.Projects}
     >
-      <Link
-        href="/"
+      <button
+        onClick={() => router.back()}
         className="block p-2 my-6 ml-6 text-2xl underline underline-offset-4 w-max"
       >
         {projects.buttons.back}
-      </Link>
+      </button>
       <div className="grid grid-cols-1 lg:grid-cols-10 px-2 sm:px-4 gap-4 max-w-screen-xl flex-1 min-h-[calc(100vh-10rem)] m-auto items-center">
         <div className="col-span-1 lg:col-span-6">
           <Gallery photos={project.images} />

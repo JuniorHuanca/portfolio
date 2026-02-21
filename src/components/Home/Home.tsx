@@ -1,5 +1,6 @@
 import Person from "@/assets/me.webp";
 import { motionDivProps } from "@/shared/config";
+import { GITHUB, LINKEDIN } from "@/shared/constanst";
 import { IHome, SelectedPage } from "@/shared/types";
 import { motion } from "framer-motion";
 import Image from "next/image";
@@ -25,7 +26,10 @@ const Home = ({ setSelectedPage, home }: Props) => {
     whileTap: { scale: 0.8 },
   };
   return (
-    <section id="home" className="flex items-center md:min-h-screen max-w-screen-2xl mx-auto">
+    <section
+      id="home"
+      className="flex items-center md:min-h-screen max-w-screen-2xl mx-auto"
+    >
       {/* IMAGE AND MAIN HEADER */}
       <motion.div
         className="mx-auto w-5/6 items-center justify-center flex-col sm:flex md:flex-row md:h-5/6"
@@ -43,9 +47,11 @@ const Home = ({ setSelectedPage, home }: Props) => {
               <h1 className="text-2xl xs:text-3xl">{home.career}</h1>
             </div>
           </div>
-          <p className="my-8 text-xl">{home.introduction}</p>
+          <p className="my-8 mr-8 text-justify text-xl whitespace-pre-line">
+            {home.introduction}
+          </p>
           <AnchorLink
-            className="text-xl rounded-md bg-indigo-900/50 px-10 py-2 hover:bg-indigo-900/70 hover:text-white"
+            className="text-xl rounded-lg bg-blue-500 hover:bg-white hover:text-blue-500 hover:ring-2 hover:ring-blue-500 px-20 py-3 transition duration-500 text-white"
             onClick={() => setSelectedPage(SelectedPage.ContactMe)}
             href={`#${SelectedPage.ContactMe}`}
           >
@@ -64,7 +70,6 @@ const Home = ({ setSelectedPage, home }: Props) => {
           />
           <a
             href="/Junior Huanca - Desarrollador Web.pdf"
-            download
             target="_blank"
             className="absolute bottom-0"
           >
@@ -79,7 +84,7 @@ const Home = ({ setSelectedPage, home }: Props) => {
               <span className="absolute bottom-0 right-0 w-4 h-full bg-gradient-to-l from-white to-transparent opacity-5"></span>
               <span className="absolute inset-0 w-full h-full border border-white rounded-md opacity-10"></span>
               <span className="absolute w-0 h-0 transition-all duration-300 ease-out bg-white rounded-full group-hover:w-56 group-hover:h-56 opacity-5"></span>
-              <span className="relative text-xl">{home.donwload}</span>
+              <span className="relative text-xl">{home.cv}</span>
             </button>
           </a>
           <motion.div
@@ -88,7 +93,7 @@ const Home = ({ setSelectedPage, home }: Props) => {
           >
             <Link
               className="hover:opacity-50 transition duration-500"
-              href="https://github.com/JuniorHuanca"
+              href={GITHUB}
               target="_blank"
               rel="noreferrer"
             >
@@ -101,7 +106,7 @@ const Home = ({ setSelectedPage, home }: Props) => {
           >
             <Link
               className="hover:opacity-50 transition duration-500"
-              href="https://www.linkedin.com/in/junior-huanca-697582254/"
+              href={LINKEDIN}
               target="_blank"
               rel="noreferrer"
             >

@@ -55,7 +55,7 @@ const Projects = ({ setSelectedPage, projects }: Props) => {
       </motion.div>
       {setSelectedPage && (
         <Link
-          className="mx-auto block w-max text-xl rounded-md bg-indigo-900/50 px-10 py-2 hover:bg-indigo-900/70 hover:text-white font-bold"
+          className="mx-auto block w-max text-xl rounded-lg bg-blue-500 hover:bg-white hover:text-blue-500 hover:ring-2 hover:ring-blue-500 px-20 py-3 transition duration-500 text-white"
           href={`/projects`}
         >
           {projects.more}

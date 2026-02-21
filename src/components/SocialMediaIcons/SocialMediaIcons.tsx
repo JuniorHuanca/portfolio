@@ -1,6 +1,7 @@
 import { BsGithub, BsLinkedin } from "react-icons/bs";
 import Link from "next/link";
 import { motion } from "framer-motion";
+import { GITHUB, LINKEDIN } from "@/shared/constanst";
 
 type Props = {};
 const SocialMediaIcons = (props: Props) => {
@@ -9,7 +10,7 @@ const SocialMediaIcons = (props: Props) => {
       <motion.div whileHover={{ scale: 1.2 }} whileTap={{ scale: 0.8 }}>
         <Link
           className="hover:opacity-50 transition duration-500"
-          href="https://www.linkedin.com/in/junior-huanca-697582254/"
+          href={LINKEDIN}
           target="_blank"
           rel="noreferrer"
         >
@@ -19,7 +20,7 @@ const SocialMediaIcons = (props: Props) => {
       <motion.div whileHover={{ scale: 1.2 }} whileTap={{ scale: 0.8 }}>
         <Link
           className="hover:opacity-50 transition duration-500"
-          href="https://github.com/JuniorHuanca"
+          href={GITHUB}
           target="_blank"
           rel="noreferrer"
         >

@@ -1,7 +1,7 @@
 {
   "metaTags": {
-    "title": "Junior Huanca",
-    "description": "Soy un desarrollador web full-stack con experiencia en React y Next.js. Construyo soluciones web escalables y modernas, abarcando frontend y backend."
+    "title": "Junior Huanca | Full Stack Developer",
+    "description": "Desarrollador Full Stack especializado en React, Next.js y TypeScript. Experiencia en despliegues cloud con Azure, automatización CI/CD y desarrollo de aplicaciones web escalables."
   },
   "navbar": {
     "links": {
@@ -13,7 +13,7 @@
       "contactMe": "Contáctame"
     },
     "languages": {
-      "en": "Ingles",
+      "en": "Inglés",
       "es": "Español"
     },
     "mode": {
@@ -24,57 +24,57 @@
   },
   "home": {
     "career": "Desarrollador Web Full-Stack",
-    "introduction": "Soy un desarrollador web full-stack con experiencia en el desarrollo de aplicaciones utilizando React y Next.js. Mi enfoque se centra en construir soluciones web escalables y modernas, aprovechando mis habilidades tanto en el desarrollo frontend como en el backend.",
+    "introduction": "Desarrollador Full Stack especializado en React, Next.js y TypeScript.\nConstruyo aplicaciones web modernas y escalables con enfoque en arquitectura limpia y rendimiento.\nExperiencia en despliegues en la nube con Azure y automatización de procesos mediante CI/CD.\nMe enfoco en crear soluciones robustas listas para producción.",
     "contactMe": "Contáctame",
-    "donwload": "Descargar CV"
+    "cv": "Conoce mi experiencia"
   },
   "aboutme": {
-    "title": "CONOCEME",
-    "description": "¡Hola! Soy Junior Huanca, un desarrollador web apasionado por crear experiencias digitales sorprendentes. Con experiencia en tecnologías como Next.js, JavaScript, TypeScript, React, Node.js y Express, puedo construir aplicaciones web robustas y escalables.\nTengo habilidades en el uso de bases de datos como MongoDB y PostgreSQL, lo que me permite gestionar eficientemente los datos y garantizar la integridad de la información.\nAdemás, tengo experiencia en el uso de Git y Bash para el control de versiones y automatización de tareas, lo que me ayuda a trabajar de manera más eficiente y garantizar una entrega de proyectos sin problemas.\nEstoy emocionado por enfrentar nuevos desafíos y aprender constantemente en este campo en evolución. Si buscas un desarrollador web apasionado y comprometido, ¡no dudes en contactarme! Estaré encantado de colaborar contigo en tu próximo proyecto."
+    "title": "CONÓCEME",
+    "description": "Soy Desarrollador Full Stack con experiencia en la creación de aplicaciones web modernas utilizando React, Next.js y TypeScript, diseñando soluciones escalables y mantenibles orientadas a entornos productivos.\n\nHe trabajado con plataformas cloud como Azure App Services y Vercel, gestionando despliegues y configurando procesos de integración y entrega continua (CI/CD) para automatizar flujos de trabajo y optimizar entornos de producción.\n\nCuento con experiencia en el desarrollo de e-commerce completos, integración de pasarelas de pago, sistemas de autenticación y dashboards administrativos. Mi enfoque está centrado en el rendimiento, la seguridad, la escalabilidad y la aplicación de buenas prácticas de desarrollo.\n\nMe motiva seguir perfeccionando mis habilidades técnicas, optimizar procesos y construir soluciones digitales eficientes que aporten valor real a los proyectos en los que participo."
   },
   "softskills": {
     "title": "HABILIDADES BLANDAS",
-    "description": "Como desarrollador web full stack, considero que mis habilidades blandas más importantes son:",
+    "description": "Como desarrollador full stack, considero que mis habilidades blandas más importantes son:",
     "data": [
       {
         "image": "Comunicacion",
         "title": "Comunicación",
-        "text": "Me esfuerzo por comunicarme de manera clara y efectiva con clientes, colegas y superiores para garantizar una comprensión mutua y una colaboración efectiva."
+        "text": "Me comunico de manera clara y efectiva con clientes y equipos de trabajo para asegurar alineación y colaboración eficiente."
       },
       {
         "image": "Colaboracion",
         "title": "Colaboración",
-        "text": "Me gusta trabajar en equipo y colaborar con otros desarrolladores, diseñadores y profesionales de TI para lograr objetivos comunes."
+        "text": "Trabajo de forma colaborativa con desarrolladores, diseñadores y otros perfiles técnicos para lograr objetivos comunes."
       },
       {
         "image": "Adaptabilidad",
         "title": "Adaptabilidad",
-        "text": "Me mantengo actualizado con las últimas tecnologías y tendencias en el desarrollo web y estoy dispuesto a aprender nuevas habilidades y tecnologías para satisfacer los requisitos cambiantes de los clientes."
+        "text": "Me mantengo actualizado con nuevas tecnologías y me adapto rápidamente a entornos y requerimientos cambiantes."
       },
       {
         "image": "ResolucionProblemas",
         "title": "Resolución de problemas",
-        "text": "Me considero un pensador analítico y estoy dispuesto a encontrar soluciones a los desafíos técnicos que surgen en el desarrollo web."
+        "text": "Analizo desafíos técnicos con enfoque estructurado para encontrar soluciones eficientes y escalables."
       },
       {
         "image": "Liderazgo",
         "title": "Liderazgo",
-        "text": "Me esfuerzo por ser un líder motivador cuando lidero proyectos o equipos, y trato de fomentar un ambiente colaborativo y productivo."
+        "text": "Asumo responsabilidad en proyectos y promuevo entornos de trabajo organizados y productivos."
       },
       {
         "image": "Organizacion",
         "title": "Organización",
-        "text": "Me gusta mantener una visión general de mis proyectos y tareas y me esfuerzo por gestionar mi tiempo de manera efectiva para alcanzar mis objetivos y entregar proyectos a tiempo."
+        "text": "Gestiono tareas y prioridades de forma estructurada para cumplir objetivos y entregar resultados a tiempo."
       }
     ]
   },
   "techskills": {
     "title": "HABILIDADES TÉCNICAS",
-    "description": "Como desarrollador web con experiencia, tengo un fuerte conocimiento en tecnologías como JavaScript, React, Redux, Node JS, Express, Sequelize, HTML, CSS, NextJS, TypeScript y Tailwind y más. A continuación, encontrarás imágenes que representan mis habilidades y experiencia en estas áreas."
+    "description": "Experiencia sólida en tecnologías como JavaScript, TypeScript, React, Next.js, Node.js, Express, Redux, Sequelize, HTML, CSS y Tailwind. También manejo despliegues en Azure, automatización CI/CD y gestión de entornos productivos."
   },
   "contactme": {
     "title": "CONTÁCTAME",
-    "description": "Si están buscando un desarrollador web full-stack confiable, no dudes en contactarme. Estoy emocionado de conectarnos y ver cómo puedo aportar valor a tus proyectos. Juntos, podemos crear soluciones impactantes y hacer realidad tus ideas. ¡Espero hablar contigo pronto!",
+    "description": "Si buscas un desarrollador full stack con experiencia en aplicaciones modernas, despliegues cloud y automatización CI/CD, estaré encantado de conversar contigo y aportar valor a tu proyecto.",
     "name": "NOMBRE",
     "email": "CORREO",
     "subject": "ASUNTO",
@@ -85,7 +85,8 @@
       "subject": "Por favor ingresa el asunto del mensaje.",
       "message": "Por favor ingresa el texto del mensaje.",
       "minmessage": "El texto debe tener al menos 10 caracteres",
-      "error": "Error algo salió mal"
+      "error": "Error, algo salió mal.",
+      "minname": "El nombre debe tener al menos 3 caracteres"
     },
     "status": {
       "loading": "Enviando correo...",
@@ -94,6 +95,6 @@
     }
   },
   "footer": {
-    "text": "JuniorHuanca. Todos los derechos reservados."
+    "text": "Junior Huanca. Todos los derechos reservados."
   }
 }

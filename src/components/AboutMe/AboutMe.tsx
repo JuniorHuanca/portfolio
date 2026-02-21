@@ -27,14 +27,8 @@ const AboutMe = ({ setSelectedPage, aboutme }: Props) => {
               {...motionDivProps}
               transition={{ delay: 0.2, duration: 0.5 }}
             >
-              <p className="my-8 text-xl text-justify">
-                {aboutme.description.split("\n").map((item, index) => (
-                  <span key={index}>
-                    {item}
-                    <br />
-                    <br />
-                  </span>
-                ))}
+              <p className="my-8 text-xl text-justify whitespace-pre-line">
+                {aboutme.description}
               </p>
             </motion.div>
           </motion.div>

@@ -19,7 +19,7 @@ export interface IHome {
   career: string;
   introduction: string;
   contactMe: string;
-  donwload: string;
+  cv: string;
 }
 
 export interface IAboutme {

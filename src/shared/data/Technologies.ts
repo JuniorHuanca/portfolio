@@ -1,51 +1,46 @@
-import JavascriptIcon from "@/assets/96/javascript.png";
-import ReactIcon from "@/assets/96/react.png";
-import TypescriptIcon from "@/assets/96/typescript.png";
-import NextjsIcon from "@/assets/96/nextjs.png";
-import ReduxIcon from "@/assets/96/redux.png";
-import NpmIcon from "@/assets/96/npm.png";
-import GitIcon from "@/assets/96/git.png";
-import NodejsIcon from "@/assets/96/nodejs.png";
+import AzureIcon from "@/assets/96/azure.svg";
+import AzureDevOpsIcon from "@/assets/96/azuredevops.svg";
+import CssIcon from "@/assets/96/css.png";
 import ExpressIcon from "@/assets/96/express.png";
+import GitIcon from "@/assets/96/git.png";
+import GitHubActionsIcon from "@/assets/96/githubactions.svg";
+import HtmlIcon from "@/assets/96/html.png";
+import JavascriptIcon from "@/assets/96/javascript.png";
+import NextjsIcon from "@/assets/96/nextjs.png";
+import NodejsIcon from "@/assets/96/nodejs.png";
+import NpmIcon from "@/assets/96/npm.png";
 import PostgresqlIcon from "@/assets/96/postgresql.png";
+import PrismaIcon from "@/assets/96/prisma.png";
+import ReactIcon from "@/assets/96/react.png";
+import ReduxIcon from "@/assets/96/redux.png";
 import SequelizeIcon from "@/assets/96/sequelize.png";
 import TailwindIcon from "@/assets/96/tailwind.png";
-import CssIcon from "@/assets/96/css.png";
-import HtmlIcon from "@/assets/96/html.png";
-import PrismaIcon from "@/assets/96/prisma.png";
+import TypescriptIcon from "@/assets/96/typescript.png";
+import VercelIcon from "@/assets/96/vercel.svg";
 
+import { BiLogoPostgresql } from "react-icons/bi";
+import { FaNpm } from "react-icons/fa";
 import {
-  SiNextdotjs,
-  SiRedux,
+  SiAzuredevops,
   SiCss3,
-  SiTailwindcss,
-  SiJavascript,
-  SiTypescript,
-  SiNodedotjs,
-  SiPrisma,
-  SiPhp,
   SiExpress,
   SiGit,
-  SiSequelize,
+  SiGithubactions,
   SiHtml5,
+  SiJavascript,
+  SiMicrosoftazure,
+  SiNextdotjs,
+  SiNodedotjs,
+  SiPrisma,
   SiReact,
+  SiRedux,
+  SiSequelize,
+  SiTailwindcss,
+  SiTypescript,
+  SiVercel,
 } from "react-icons/si";
-import { FaNpm } from "react-icons/fa";
-import { BiLogoPostgresql } from "react-icons/bi";
 
 export const technologies = [
-  {
-    name: "Javascript",
-    image: JavascriptIcon,
-    url: "",
-    icon: SiJavascript,
-  },
-  {
-    name: "React",
-    image: ReactIcon,
-    url: "",
-    icon: SiReact,
-  },
   {
     name: "Typescript",
     image: TypescriptIcon,
@@ -59,16 +54,41 @@ export const technologies = [
     icon: SiNextdotjs,
   },
   {
-    name: "Redux",
-    image: ReduxIcon,
+    name: "React",
+    image: ReactIcon,
     url: "",
-    icon: SiRedux,
+    icon: SiReact,
   },
   {
-    name: "Npm",
-    image: NpmIcon,
+    name: "Javascript",
+    image: JavascriptIcon,
     url: "",
-    icon: FaNpm,
+    icon: SiJavascript,
+  },
+
+  {
+    name: "Azure",
+    image: AzureIcon,
+    url: "",
+    icon: SiMicrosoftazure,
+  },
+  {
+    name: "GitHub Actions",
+    image: GitHubActionsIcon,
+    url: "",
+    icon: SiGithubactions,
+  },
+  {
+    name: "Azure DevOps",
+    image: AzureDevOpsIcon,
+    url: "",
+    icon: SiAzuredevops,
+  },
+  {
+    name: "Vercel",
+    image: VercelIcon,
+    url: "",
+    icon: SiVercel,
   },
   {
     name: "Git",
@@ -76,6 +96,7 @@ export const technologies = [
     url: "",
     icon: SiGit,
   },
+
   {
     name: "Nodejs",
     image: NodejsIcon,
@@ -88,6 +109,7 @@ export const technologies = [
     url: "",
     icon: SiExpress,
   },
+
   {
     name: "Postgresql",
     image: PostgresqlIcon,
@@ -95,17 +117,18 @@ export const technologies = [
     icon: BiLogoPostgresql,
   },
   {
-    name: "Sequelize",
-    image: SequelizeIcon,
-    url: "",
-    icon: SiSequelize,
-  },
-  {
     name: "Prisma",
     image: PrismaIcon,
     url: "",
     icon: SiPrisma,
   },
+  {
+    name: "Sequelize",
+    image: SequelizeIcon,
+    url: "",
+    icon: SiSequelize,
+  },
+
   {
     name: "Tailwind",
     image: TailwindIcon,
@@ -123,5 +146,18 @@ export const technologies = [
     image: HtmlIcon,
     url: "",
     icon: SiHtml5,
+  },
+
+  {
+    name: "Redux",
+    image: ReduxIcon,
+    url: "",
+    icon: SiRedux,
+  },
+  {
+    name: "Npm",
+    image: NpmIcon,
+    url: "",
+    icon: FaNpm,
   },
 ];

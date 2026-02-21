@@ -19,7 +19,9 @@ type Props = {
 
 const ContactMe = ({ setSelectedPage, contactme }: Props) => {
   const validationSchema = Yup.object().shape({
-    name: Yup.string().required(contactme.errors.name),
+    name: Yup.string()
+      .required(contactme.errors.name)
+      .min(3, contactme.errors.minname),
     email: Yup.string()
       .email(contactme.errors.email)
       .required(contactme.errors.email),
@@ -63,7 +65,10 @@ const ContactMe = ({ setSelectedPage, contactme }: Props) => {
     }
   }
   return (
-    <section id="contactme" className="mx-auto min-h-full w-5/6 py-20 max-w-screen-2xl">
+    <section
+      id="contactme"
+      className="mx-auto min-h-full w-5/6 py-20 max-w-screen-2xl"
+    >
       <motion.div
         onViewportEnter={() => setSelectedPage(SelectedPage.ContactMe)}
       >
@@ -169,7 +174,8 @@ const ContactMe = ({ setSelectedPage, contactme }: Props) => {
               </div>
               <button
                 type="submit"
-                className="mt-5 rounded-lg bg-blue-600/50 hover:bg-blue-600/70 dark:bg-blue-500/50 dark:hover:bg-blue-500/70 px-20 py-3 transition duration-500 text-white"
+                className="mt-5 rounded-lg bg-blue-500 hover:bg-white hover:text-blue-500 hover:ring-2 hover:ring-blue-500 px-20 py-3 transition duration-500 text-white disabled:opacity-50 disabled:cursor-not-allowed"
+                disabled={formik.isSubmitting || !formik.isValid || !formik.dirty}
               >
                 ENVIAR
               </button>

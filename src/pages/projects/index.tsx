@@ -7,7 +7,6 @@ import {
   IProjects,
   SelectedPage,
 } from "@/shared/types";
-import Link from "next/link";
 
 type Props = {
   metaTags: IMetaTags;

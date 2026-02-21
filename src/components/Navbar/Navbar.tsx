@@ -71,7 +71,7 @@ const Navbar = ({
                         selectedPage === lowerCasePage
                           ? "text-blue-500 dark:text-light-blue-400"
                           : ""
-                      } px-3 py-2 transition duration-500 hover:text-blue-500 dark:hover:text-light-blue-400 text-lg font-bold`}
+                      } px-3 py-2 transition duration-500 hover:text-blue-500 dark:hover:text-light-blue-400 text-lg font-bold relative after:content-[''] after:absolute after:left-0 after:bottom-0 after:h-0.5 after:w-0 after:bg-gradient-rainblue after:transition-all after:duration-500 hover:after:w-full`}
                       onClick={() => {
                         scrollToSection(lowerCasePage);
                         setSelectedPage(lowerCasePage);
