@@ -1,6 +1,7 @@
 import Gallery from "@/components/Gallery";
 import Layout from "@/components/Layout";
 import { projectsData } from "@/shared/data/Projects";
+import { getTechnologyName } from "@/shared/config";
 import {
   IFooter,
   IMetaTags,
@@ -50,10 +51,9 @@ const ProjectDetail = ({ metaTags, name, projects, navbar, footer }: Props) => {
           <p className="text-lg xl:text-xl text-justify">{description}</p>
           <div className="flex justify-center flex-wrap my-6 gap-2">
             {project.tecnologies.map((Icon, index) => (
-              <Icon
-                key={index}
-                className="text-4xl xl:text-5xl hover:scale-125 transition-all"
-              />
+              <span key={index} aria-label={getTechnologyName(Icon)}>
+                <Icon className="text-4xl xl:text-5xl hover:scale-125 transition-all" />
+              </span>
             ))}
           </div>
           <div className="flex flex-wrap gap-2 justify-around">

@@ -13,6 +13,7 @@ const SocialMediaIcons = (props: Props) => {
           href={LINKEDIN}
           target="_blank"
           rel="noreferrer"
+          aria-label="LinkedIn"
         >
           <BsLinkedin className="text-5xl" />
         </Link>
@@ -23,6 +24,7 @@ const SocialMediaIcons = (props: Props) => {
           href={GITHUB}
           target="_blank"
           rel="noreferrer"
+          aria-label="GitHub"
         >
           <BsGithub className="text-5xl" />
         </Link>

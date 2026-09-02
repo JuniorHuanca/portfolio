@@ -42,6 +42,7 @@ const Gallery = ({ photos }: Props) => {
           className="bg-black/30 rounded-full p-1"
           onClick={previousSlide}
           type="button"
+          aria-label="Anterior"
         >
           <BiChevronLeft />
         </button>
@@ -49,6 +50,7 @@ const Gallery = ({ photos }: Props) => {
           className="bg-black/30 rounded-full p-1"
           onClick={nextSlide}
           type="button"
+          aria-label="Siguiente"
         >
           <BiChevronRight />
         </button>
