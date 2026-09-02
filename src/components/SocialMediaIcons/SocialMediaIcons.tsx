@@ -9,7 +9,7 @@ const SocialMediaIcons = (props: Props) => {
     <div className="flex justify-center md:justify-start my-6 gap-10">
       <motion.div whileHover={{ scale: 1.2 }} whileTap={{ scale: 0.8 }}>
         <Link
-          className="hover:opacity-50 transition duration-500"
+          className="hover:opacity-75 transition duration-500"
           href={LINKEDIN}
           target="_blank"
           rel="noreferrer"
@@ -20,7 +20,7 @@ const SocialMediaIcons = (props: Props) => {
       </motion.div>
       <motion.div whileHover={{ scale: 1.2 }} whileTap={{ scale: 0.8 }}>
         <Link
-          className="hover:opacity-50 transition duration-500"
+          className="hover:opacity-75 transition duration-500"
           href={GITHUB}
           target="_blank"
           rel="noreferrer"

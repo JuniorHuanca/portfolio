@@ -90,7 +90,7 @@ const Home = ({ setSelectedPage, home }: Props) => {
             {...socialNetworksProps}
           >
             <Link
-              className="hover:opacity-50 transition duration-500"
+              className="hover:opacity-75 transition duration-500"
               href={GITHUB}
               target="_blank"
               rel="noreferrer"
@@ -104,7 +104,7 @@ const Home = ({ setSelectedPage, home }: Props) => {
             {...socialNetworksProps}
           >
             <Link
-              className="hover:opacity-50 transition duration-500"
+              className="hover:opacity-75 transition duration-500"
               href={LINKEDIN}
               target="_blank"
               rel="noreferrer"

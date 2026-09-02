@@ -31,9 +31,11 @@ const Project = ({ project, data, buttons }: Props) => {
         </div>
         <div className="flex justify-center flex-wrap my-6 gap-2">
           {project.tecnologies.map((Icon, index) => (
-            <span key={index} aria-label={getTechnologyName(Icon)}>
-              <Icon className="text-4xl xl:text-5xl hover:scale-125 transition-all" />
-            </span>
+            <Icon
+              key={index}
+              className="text-4xl xl:text-5xl hover:scale-125 transition-all"
+              aria-label={getTechnologyName(Icon)}
+            />
           ))}
         </div>
         {/* <div className="flex flex-wrap gap-2 justify-around">
