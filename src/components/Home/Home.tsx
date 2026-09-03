@@ -73,7 +73,7 @@ const Home = ({ setSelectedPage, home }: Props) => {
             href="/Junior Huanca - Desarrollador Web.pdf"
             target="_blank"
             rel="noreferrer"
-            className="absolute bottom-0 m-2 bg-indigo-900 relative inline-flex items-center justify-center px-8 py-4 overflow-hidden font-bold text-white rounded-md shadow-2xl group"
+            className="absolute bottom-0 m-2 bg-indigo-900 inline-flex items-center justify-center px-8 py-4 overflow-hidden font-bold text-white rounded-md shadow-2xl group"
             aria-label="Download CV"
           >
             <span className="absolute inset-0 w-full h-full transition duration-300 ease-out opacity-0 bg-gradient-to-br from-pink-600 via-purple-700 to-blue-400 group-hover:opacity-100"></span>
